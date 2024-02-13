@@ -2,8 +2,8 @@
 namespace eval alt_mge_xcvr_reset_ctrl_txpll {
   proc get_design_libraries {} {
     set libraries [dict create]
-    dict set libraries altera_xcvr_reset_control_181 1
-    dict set libraries alt_mge_xcvr_reset_ctrl_txpll 1
+    dict set libraries altera_xcvr_reset_control_1911 1
+    dict set libraries alt_mge_xcvr_reset_ctrl_txpll  1
     return $libraries
   }
   
@@ -19,15 +19,11 @@ namespace eval alt_mge_xcvr_reset_ctrl_txpll {
   
   proc get_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
     set design_files [list]
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/altera_xcvr_functions.sv"]\"  -work altera_xcvr_reset_control_181"           
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/mentor/altera_xcvr_functions.sv"]\"  -work altera_xcvr_reset_control_181"    
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/alt_xcvr_resync.sv"]\"  -work altera_xcvr_reset_control_181"                 
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/mentor/alt_xcvr_resync.sv"]\"  -work altera_xcvr_reset_control_181"          
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/altera_xcvr_reset_control.sv"]\"  -work altera_xcvr_reset_control_181"       
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/alt_xcvr_reset_counter.sv"]\"  -work altera_xcvr_reset_control_181"          
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/mentor/altera_xcvr_reset_control.sv"]\"  -work altera_xcvr_reset_control_181"
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_181/sim/mentor/alt_xcvr_reset_counter.sv"]\"  -work altera_xcvr_reset_control_181"   
-    lappend design_files "vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/alt_mge_xcvr_reset_ctrl_txpll.v"]\"  -work alt_mge_xcvr_reset_ctrl_txpll"                                             
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_1911/sim/altera_xcvr_functions.sv"]\"  -work altera_xcvr_reset_control_1911"    
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_1911/sim/alt_xcvr_resync.sv"]\"  -work altera_xcvr_reset_control_1911"          
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_1911/sim/altera_xcvr_reset_control.sv"]\"  -work altera_xcvr_reset_control_1911"
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_reset_control_1911/sim/alt_xcvr_reset_counter.sv"]\"  -work altera_xcvr_reset_control_1911"   
+    lappend design_files "vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/alt_mge_xcvr_reset_ctrl_txpll.v"]\"  -work alt_mge_xcvr_reset_ctrl_txpll"                                        
     return $design_files
   }
   
@@ -70,4 +66,10 @@ namespace eval alt_mge_xcvr_reset_ctrl_txpll {
       } 
       return $path 
   } 
+  proc get_dpi_libraries {QSYS_SIMDIR} {
+    set libraries [dict create]
+    
+    return $libraries
+  }
+  
 }

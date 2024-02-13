@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.02.16.09:32:13"
- outputDirectory="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/address_decoder/ip/address_decoder_multi_channel/address_decoder_multi_channel_channel_4/">
+ date="2024.02.13.12:01:44"
+ outputDirectory="C:/gitwork/LL10G_Cyclone10GX_1/rtl/address_decoder/ip/address_decoder_multi_channel/address_decoder_multi_channel_channel_4/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -24,13 +24,19 @@
   <parameter
      name="AUTO_DEVICE"
      type="String"
-     defaultValue="10CX220YF780I6G"
+     defaultValue="10CX220YF780I5G"
      onHdl="0"
      affectsHdl="1" />
   <parameter
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
-     defaultValue="6"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -116,6 +122,16 @@
    <property name="writeLatency" value="0" />
    <property name="writeWaitStates" value="0" />
    <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
    <port name="uav_address" direction="input" role="address" width="16" />
    <port name="uav_burstcount" direction="input" role="burstcount" width="3" />
    <port name="uav_read" direction="input" role="read" width="1" />
@@ -188,6 +204,7 @@
   <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
   <parameter name="AUTO_AVALON_ANTI_SLAVE_0_ADDRESS_WIDTH" value="-1" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_BOARD" value="default" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_AVALON_ANTI_SLAVE_0_ADDRESS_MAP" value="" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
@@ -195,49 +212,49 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\synth\address_decoder_multi_channel_channel_4.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\synth\address_decoder_multi_channel_channel_4.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\synth\address_decoder_multi_channel_channel_4.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\synth\address_decoder_multi_channel_channel_4.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/address_decoder/ip/address_decoder_multi_channel/address_decoder_multi_channel_channel_4.ip" />
+       path="C:/gitwork/LL10G_Cyclone10GX_1/rtl/address_decoder/ip/address_decoder_multi_channel/address_decoder_multi_channel_channel_4.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="address_decoder_multi_channel_channel_4">"Generating: address_decoder_multi_channel_channel_4"</message>
-   <message level="Info" culprit="address_decoder_multi_channel_channel_4">"Generating: address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_181_5aswt6a"</message>
+   <message level="Info" culprit="address_decoder_multi_channel_channel_4">"Generating: address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_191_x56fcki"</message>
   </messages>
  </entity>
  <entity
    kind="altera_merlin_slave_translator"
-   version="18.1"
-   name="address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_181_5aswt6a">
+   version="19.1"
+   name="address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_191_x56fcki">
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\altera_merlin_slave_translator_181\synth\address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_181_5aswt6a.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\altera_merlin_slave_translator_191\synth\address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_191_x56fcki.sv"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\altera_merlin_slave_translator_181\synth\address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_181_5aswt6a.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_multi_channel\address_decoder_multi_channel_channel_4\altera_merlin_slave_translator_191\synth\address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_191_x56fcki.sv"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/merlin/altera_merlin_slave_translator/altera_merlin_slave_translator_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="address_decoder_multi_channel_channel_4" as="channel_4" />
   <messages>
-   <message level="Info" culprit="address_decoder_multi_channel_channel_4">"Generating: address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_181_5aswt6a"</message>
+   <message level="Info" culprit="address_decoder_multi_channel_channel_4">"Generating: address_decoder_multi_channel_channel_4_altera_merlin_slave_translator_191_x56fcki"</message>
   </messages>
  </entity>
 </deploy>

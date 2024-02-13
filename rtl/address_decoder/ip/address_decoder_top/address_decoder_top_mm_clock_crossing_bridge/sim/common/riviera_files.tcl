@@ -2,7 +2,8 @@
 namespace eval address_decoder_top_mm_clock_crossing_bridge {
   proc get_design_libraries {} {
     set libraries [dict create]
-    dict set libraries altera_avalon_mm_clock_crossing_bridge_181   1
+    dict set libraries st_dc_fifo_1950                              1
+    dict set libraries mm_ccb_1921                                  1
     dict set libraries address_decoder_top_mm_clock_crossing_bridge 1
     return $libraries
   }
@@ -19,11 +20,14 @@ namespace eval address_decoder_top_mm_clock_crossing_bridge {
   
   proc get_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
     set design_files [list]
-    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_avalon_mm_clock_crossing_bridge_181/sim/address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq.v"]\"  -work altera_avalon_mm_clock_crossing_bridge_181"
-    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_avalon_mm_clock_crossing_bridge_181/sim/altera_avalon_dc_fifo.v"]\"  -work altera_avalon_mm_clock_crossing_bridge_181"                                                                          
-    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_avalon_mm_clock_crossing_bridge_181/sim/altera_dcfifo_synchronizer_bundle.v"]\"  -work altera_avalon_mm_clock_crossing_bridge_181"                                                              
-    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_avalon_mm_clock_crossing_bridge_181/sim/altera_std_synchronizer_nocut.v"]\"  -work altera_avalon_mm_clock_crossing_bridge_181"                                                                  
-    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/address_decoder_top_mm_clock_crossing_bridge.v"]\"  -work address_decoder_top_mm_clock_crossing_bridge"                                                                                                   
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../st_dc_fifo_1950/sim/address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y.v"]\"  -work st_dc_fifo_1950"
+    lappend design_files "vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../st_dc_fifo_1950/sim/altera_reset_synchronizer.v"]\"  -work st_dc_fifo_1950"                                                
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../st_dc_fifo_1950/sim/altera_dcfifo_synchronizer_bundle.v"]\"  -work st_dc_fifo_1950"                                   
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../st_dc_fifo_1950/sim/altera_std_synchronizer_nocut.v"]\"  -work st_dc_fifo_1950"                                       
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../mm_ccb_1921/sim/address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy.v"]\"  -work mm_ccb_1921" 
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../mm_ccb_1921/sim/address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy.v"]\"  -work mm_ccb_1921" 
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../mm_ccb_1921/sim/address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni.v"]\"  -work mm_ccb_1921"            
+    lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/address_decoder_top_mm_clock_crossing_bridge.v"]\"  -work address_decoder_top_mm_clock_crossing_bridge"                  
     return $design_files
   }
   
@@ -66,4 +70,10 @@ namespace eval address_decoder_top_mm_clock_crossing_bridge {
       } 
       return $path 
   } 
+  proc get_dpi_libraries {QSYS_SIMDIR} {
+    set libraries [dict create]
+    
+    return $libraries
+  }
+  
 }

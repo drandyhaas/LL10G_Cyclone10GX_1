@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.02.16.09:33:12"
- outputDirectory="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/address_decoder/ip/address_decoder_top/address_decoder_top_mm_clock_crossing_bridge/">
+ date="2024.02.13.12:01:56"
+ outputDirectory="C:/gitwork/LL10G_Cyclone10GX_1/rtl/address_decoder/ip/address_decoder_top/address_decoder_top_mm_clock_crossing_bridge/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -24,13 +24,19 @@
   <parameter
      name="AUTO_DEVICE"
      type="String"
-     defaultValue="10CX220YF780I6G"
+     defaultValue="10CX220YF780I5G"
      onHdl="0"
      affectsHdl="1" />
   <parameter
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
-     defaultValue="6"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -147,6 +153,16 @@
    <property name="writeLatency" value="0" />
    <property name="writeWaitStates" value="0" />
    <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
    <port name="s0_waitrequest" direction="output" role="waitrequest" width="1" />
    <port name="s0_readdata" direction="output" role="readdata" width="32" />
    <port
@@ -219,6 +235,7 @@
    name="address_decoder_top_mm_clock_crossing_bridge">
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_BOARD" value="default" />
   <parameter name="AUTO_M0_ADDRESS_MAP" value="" />
   <parameter name="AUTO_S0_CLK_CLOCK_RATE" value="-1" />
   <parameter name="AUTO_M0_CLK_RESET_DOMAIN" value="-1" />
@@ -232,76 +249,216 @@
   <parameter name="AUTO_M0_ADDRESS_WIDTH" value="-1" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\synth\address_decoder_top_mm_clock_crossing_bridge.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\synth\address_decoder_top_mm_clock_crossing_bridge.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\synth\address_decoder_top_mm_clock_crossing_bridge.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\synth\address_decoder_top_mm_clock_crossing_bridge.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/address_decoder/ip/address_decoder_top/address_decoder_top_mm_clock_crossing_bridge.ip" />
+       path="C:/gitwork/LL10G_Cyclone10GX_1/rtl/address_decoder/ip/address_decoder_top/address_decoder_top_mm_clock_crossing_bridge.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge_hw.tcl" />
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge"</message>
-   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni"</message>
+   <message level="Info" culprit="my_altera_avalon_dc_fifo_cmd_fifo">"Generating: my_altera_avalon_dc_fifo_cmd_fifo"</message>
+   <message level="Info" culprit="my_altera_avalon_dc_fifo_rsp_fifo">"Generating: my_altera_avalon_dc_fifo_rsp_fifo"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
   </messages>
  </entity>
  <entity
-   kind="altera_avalon_mm_clock_crossing_bridge"
-   version="18.1"
-   name="address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq">
+   kind="mm_ccb"
+   version="19.2.1"
+   name="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni">
   <parameter name="MAX_BURST_SIZE" value="1" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\mm_ccb_1921\synth\address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni.v"
        attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_avalon_dc_fifo.v"
-       attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_dcfifo_synchronizer_bundle.v"
-       attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_std_synchronizer_nocut.v"
-       attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_avalon_dc_fifo.sdc"
-       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\mm_ccb_1921\synth\address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni.v"
        attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_avalon_dc_fifo.v"
-       attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_dcfifo_synchronizer_bundle.v"
-       attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_std_synchronizer_nocut.v"
-       attributes="" />
-   <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\altera_avalon_mm_clock_crossing_bridge_181\synth\altera_avalon_dc_fifo.sdc"
-       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/merlin/altera_avalon_mm_clock_crossing_bridge/altera_avalon_mm_clock_crossing_bridge_hw.tcl" />
   </sourceFiles>
-  <childSourceFiles/>
+  <childSourceFiles>
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
+  </childSourceFiles>
   <instantiator
      instantiator="address_decoder_top_mm_clock_crossing_bridge"
      as="mm_clock_crossing_bridge" />
   <messages>
-   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni"</message>
+   <message level="Info" culprit="my_altera_avalon_dc_fifo_cmd_fifo">"Generating: my_altera_avalon_dc_fifo_cmd_fifo"</message>
+   <message level="Info" culprit="my_altera_avalon_dc_fifo_rsp_fifo">"Generating: my_altera_avalon_dc_fifo_rsp_fifo"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="mm_ccb_st_dc_fifo"
+   version="19.2.1"
+   name="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy">
+  <parameter name="FIFO_DEPTH" value="4" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="USE_SPACE_AVAIL_IF" value="0" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="PIPELINE_POINTERS" value="0" />
+  <parameter name="SYMBOLS_PER_BEAT" value="1" />
+  <parameter name="BITS_PER_SYMBOL" value="57" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+  <parameter name="SYNC_RESET" value="0" />
+  <parameter name="retiming_reg_en" value="0" />
+  <generatedFiles>
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\mm_ccb_1921\synth\address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\mm_ccb_1921\synth\address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni"
+     as="my_altera_avalon_dc_fifo_cmd_fifo" />
+  <messages>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="mm_ccb_st_dc_fifo"
+   version="19.2.1"
+   name="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy">
+  <parameter name="FIFO_DEPTH" value="4" />
+  <parameter name="USE_PACKETS" value="0" />
+  <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="USE_SPACE_AVAIL_IF" value="1" />
+  <parameter name="CHANNEL_WIDTH" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="PIPELINE_POINTERS" value="0" />
+  <parameter name="SYMBOLS_PER_BEAT" value="1" />
+  <parameter name="BITS_PER_SYMBOL" value="32" />
+  <parameter name="ERROR_WIDTH" value="0" />
+  <parameter name="RD_SYNC_DEPTH" value="3" />
+  <parameter name="USE_IN_FILL_LEVEL" value="0" />
+  <parameter name="WR_SYNC_DEPTH" value="3" />
+  <parameter name="SYNC_RESET" value="0" />
+  <parameter name="retiming_reg_en" value="0" />
+  <generatedFiles>
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\mm_ccb_1921\synth\address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\mm_ccb_1921\synth\address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles/>
+  <childSourceFiles>
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
+  </childSourceFiles>
+  <instantiator
+     instantiator="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni"
+     as="my_altera_avalon_dc_fifo_rsp_fifo" />
+  <messages>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy"</message>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="st_dc_fifo"
+   version="19.5.0"
+   name="address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y">
+  <parameter name="EXPLICIT_MAXCHANNEL" value="0" />
+  <parameter name="SYNC_RESET" value="0" />
+  <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
+  <parameter name="retiming_reg_en" value="0" />
+  <generatedFiles>
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\altera_dcfifo_synchronizer_bundle.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\altera_reset_synchronizer.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\altera_dcfifo_synchronizer_bundle.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\altera_std_synchronizer_nocut.v"
+       attributes="" />
+   <file
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_top\address_decoder_top_mm_clock_crossing_bridge\st_dc_fifo_1950\synth\address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y.sdc"
+       attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="E:/intelfpga_pro/23.4/ip/altera/sopc_builder_ip/altera_avalon_dc_fifo/altera_avalon_dc_fifo_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy"
+     as="my_altera_avalon_dc_fifo_cmd_fifo" />
+  <instantiator
+     instantiator="address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy"
+     as="my_altera_avalon_dc_fifo_rsp_fifo" />
+  <messages>
+   <message level="Info" culprit="address_decoder_top_mm_clock_crossing_bridge">"Generating: address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y"</message>
   </messages>
  </entity>
 </deploy>

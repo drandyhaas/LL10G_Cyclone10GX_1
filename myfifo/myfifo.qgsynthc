@@ -3,16 +3,7 @@
   <instanceKey xsi:type="xs:string">myfifo</instanceKey>
   <instanceData xsi:type="data">
     <parameters></parameters>
-    <interconnectAssignments>
-      <interconnectAssignment>
-        <name>$system.qsys_mm.clockCrossingAdapter</name>
-        <value>HANDSHAKE</value>
-      </interconnectAssignment>
-      <interconnectAssignment>
-        <name>$system.qsys_mm.maxAdditionalLatency</name>
-        <value>0</value>
-      </interconnectAssignment>
-    </interconnectAssignments>
+    <interconnectAssignments></interconnectAssignments>
     <className>myfifo</className>
     <version>1.0</version>
     <name>myfifo</name>
@@ -200,9 +191,9 @@
         </parameters>
         <interconnectAssignments></interconnectAssignments>
         <className>fifo</className>
-        <version>18.1</version>
+        <version>19.2.4</version>
         <name>fifo_0</name>
-        <uniqueName>myfifo_fifo_181_3qmqbnq</uniqueName>
+        <uniqueName>myfifo_fifo_1924_idgkmhq</uniqueName>
         <nonce>0</nonce>
         <incidentConnections></incidentConnections>
         <path>myfifo.fifo_0</path>

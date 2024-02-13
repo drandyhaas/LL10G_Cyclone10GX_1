@@ -22,7 +22,8 @@ module address_decoder_top_master #(
 		parameter UAV_CONSTANT_BURST_BEHAVIOR = 0,
 		parameter AV_LINEWRAPBURSTS           = 0,
 		parameter AV_REGISTERINCOMINGSIGNALS  = 0,
-		parameter SYNC_RESET                  = 0
+		parameter SYNC_RESET                  = 0,
+		parameter USE_OUTPUTENABLE            = 0
 	) (
 		input  wire        clk,               //                       clk.clk
 		input  wire        reset,             //                     reset.reset

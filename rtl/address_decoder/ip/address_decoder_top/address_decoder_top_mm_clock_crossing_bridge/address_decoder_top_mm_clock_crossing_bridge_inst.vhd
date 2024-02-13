@@ -2,12 +2,13 @@
 		generic (
 			DATA_WIDTH          : integer := 32;
 			SYMBOL_WIDTH        : integer := 8;
-			HDL_ADDR_WIDTH      : integer := 10;
+			HDL_ADDR_WIDTH      : integer := 17;
 			BURSTCOUNT_WIDTH    : integer := 1;
 			COMMAND_FIFO_DEPTH  : integer := 4;
 			RESPONSE_FIFO_DEPTH : integer := 4;
-			MASTER_SYNC_DEPTH   : integer := 2;
-			SLAVE_SYNC_DEPTH    : integer := 2
+			MASTER_SYNC_DEPTH   : integer := 3;
+			SLAVE_SYNC_DEPTH    : integer := 3;
+			SYNC_RESET          : integer := 0
 		);
 		port (
 			m0_clk           : in  std_logic                                     := 'X';             -- clk
@@ -46,7 +47,8 @@
 			COMMAND_FIFO_DEPTH  => INTEGER_VALUE_FOR_COMMAND_FIFO_DEPTH,
 			RESPONSE_FIFO_DEPTH => INTEGER_VALUE_FOR_RESPONSE_FIFO_DEPTH,
 			MASTER_SYNC_DEPTH   => INTEGER_VALUE_FOR_MASTER_SYNC_DEPTH,
-			SLAVE_SYNC_DEPTH    => INTEGER_VALUE_FOR_SLAVE_SYNC_DEPTH
+			SLAVE_SYNC_DEPTH    => INTEGER_VALUE_FOR_SLAVE_SYNC_DEPTH,
+			SYNC_RESET          => INTEGER_VALUE_FOR_SYNC_RESET
 		)
 		port map (
 			m0_clk           => CONNECTED_TO_m0_clk,           --   m0_clk.clk

@@ -5,7 +5,7 @@ Test of 10 Gb ethernet output from Cyclone 10 GX dev kit
 All switches up (OFF, 1) except S3_2 (and S2_1)
 For FMC JTAG not in use, set S5_1 to 0
 
-Quartus Pro 18.1
+Quartus Pro 23.4
 
 Program with .sof (via .cdf to open programmer)<br>
 Runs for unlimited time, but can't program permanently<br>

@@ -2,7 +2,7 @@
 namespace eval alt_mge_core_pll {
   proc get_design_libraries {} {
     set libraries [dict create]
-    dict set libraries altera_xcvr_fpll_a10_181 1
+    dict set libraries altera_xcvr_fpll_a10_191 1
     dict set libraries alt_mge_core_pll         1
     return $libraries
   }
@@ -19,19 +19,14 @@ namespace eval alt_mge_core_pll {
   
   proc get_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
     set design_files [list]
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/twentynm_xcvr_avmm.sv"]\"  -work altera_xcvr_fpll_a10_181"                
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/mentor/twentynm_xcvr_avmm.sv"]\"  -work altera_xcvr_fpll_a10_181"         
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/alt_xcvr_resync.sv"]\"  -work altera_xcvr_fpll_a10_181"                   
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/mentor/alt_xcvr_resync.sv"]\"  -work altera_xcvr_fpll_a10_181"            
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/altera_xcvr_fpll_a10.sv"]\"  -work altera_xcvr_fpll_a10_181"              
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/mentor/altera_xcvr_fpll_a10.sv"]\"  -work altera_xcvr_fpll_a10_181"       
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/a10_avmm_h.sv"]\"  -work altera_xcvr_fpll_a10_181"                        
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/alt_xcvr_native_avmm_nf.sv"]\"  -work altera_xcvr_fpll_a10_181"           
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/alt_xcvr_pll_embedded_debug.sv"]\"  -work altera_xcvr_fpll_a10_181"       
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/alt_xcvr_pll_avmm_csr.sv"]\"  -work altera_xcvr_fpll_a10_181"             
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/mentor/alt_xcvr_pll_embedded_debug.sv"]\"  -work altera_xcvr_fpll_a10_181"
-    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_181/sim/mentor/alt_xcvr_pll_avmm_csr.sv"]\"  -work altera_xcvr_fpll_a10_181"      
-    lappend design_files "vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/alt_mge_core_pll.v"]\"  -work alt_mge_core_pll"                                                               
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/twentynm_xcvr_avmm.sv"]\"  -work altera_xcvr_fpll_a10_191"         
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/alt_xcvr_resync.sv"]\"  -work altera_xcvr_fpll_a10_191"            
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/altera_xcvr_fpll_a10.sv"]\"  -work altera_xcvr_fpll_a10_191"       
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/a10_avmm_h.sv"]\"  -work altera_xcvr_fpll_a10_191"                 
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/alt_xcvr_native_avmm_nf.sv"]\"  -work altera_xcvr_fpll_a10_191"    
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/alt_xcvr_pll_embedded_debug.sv"]\"  -work altera_xcvr_fpll_a10_191"
+    lappend design_files "vlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_xcvr_fpll_a10_191/sim/alt_xcvr_pll_avmm_csr.sv"]\"  -work altera_xcvr_fpll_a10_191"      
+    lappend design_files "vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/alt_mge_core_pll.v"]\"  -work alt_mge_core_pll"                                                        
     return $design_files
   }
   
@@ -74,4 +69,10 @@ namespace eval alt_mge_core_pll {
       } 
       return $path 
   } 
+  proc get_dpi_libraries {QSYS_SIMDIR} {
+    set libraries [dict create]
+    
+    return $libraries
+  }
+  
 }

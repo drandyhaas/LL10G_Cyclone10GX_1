@@ -2,7 +2,7 @@
 namespace eval address_decoder_multi_channel_master {
   proc get_design_libraries {} {
     set libraries [dict create]
-    dict set libraries altera_merlin_master_translator_181  1
+    dict set libraries altera_merlin_master_translator_192  1
     dict set libraries address_decoder_multi_channel_master 1
     return $libraries
   }
@@ -19,7 +19,7 @@ namespace eval address_decoder_multi_channel_master {
   
   proc get_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
     set design_files [list]
-    lappend design_files "vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_merlin_master_translator_181/sim/address_decoder_multi_channel_master_altera_merlin_master_translator_181_mhudjri.sv"]\"  -work altera_merlin_master_translator_181"
+    lappend design_files "vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_merlin_master_translator_192/sim/address_decoder_multi_channel_master_altera_merlin_master_translator_192_lykd4la.sv"]\"  -work altera_merlin_master_translator_192"
     lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/address_decoder_multi_channel_master.v"]\"  -work address_decoder_multi_channel_master"                                                                                  
     return $design_files
   }
@@ -63,4 +63,10 @@ namespace eval address_decoder_multi_channel_master {
       } 
       return $path 
   } 
+  proc get_dpi_libraries {QSYS_SIMDIR} {
+    set libraries [dict create]
+    
+    return $libraries
+  }
+  
 }

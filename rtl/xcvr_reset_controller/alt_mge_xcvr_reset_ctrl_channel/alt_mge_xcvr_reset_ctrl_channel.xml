@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.02.16.09:34:59"
- outputDirectory="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/xcvr_reset_controller/alt_mge_xcvr_reset_ctrl_channel/">
+ date="2024.02.13.12:01:57"
+ outputDirectory="C:/gitwork/LL10G_Cyclone10GX_1/rtl/xcvr_reset_controller/alt_mge_xcvr_reset_ctrl_channel/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -31,6 +31,12 @@
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
      defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -165,25 +171,26 @@
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_BOARD" value="default" />
   <parameter name="AUTO_UNIQUE_ID" value="" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\synth\alt_mge_xcvr_reset_ctrl_channel.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\synth\alt_mge_xcvr_reset_ctrl_channel.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\synth\alt_mge_xcvr_reset_ctrl_channel.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\synth\alt_mge_xcvr_reset_ctrl_channel.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/xcvr_reset_controller/alt_mge_xcvr_reset_ctrl_channel.ip" />
+       path="C:/gitwork/LL10G_Cyclone10GX_1/rtl/xcvr_reset_controller/alt_mge_xcvr_reset_ctrl_channel.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/alt_xcvr/altera_xcvr_reset_control/tcl/altera_xcvr_reset_control_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/alt_xcvr/altera_xcvr_reset_control/tcl/altera_xcvr_reset_control_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="alt_mge_xcvr_reset_ctrl_channel">"Generating: alt_mge_xcvr_reset_ctrl_channel"</message>
@@ -196,7 +203,7 @@
  </entity>
  <entity
    kind="altera_xcvr_reset_control"
-   version="18.1"
+   version="19.1.1"
    name="altera_xcvr_reset_control">
   <parameter name="gui_rx_auto_reset" value="0" />
   <parameter name="T_TX_ANALOGRESET" value="70000" />
@@ -233,41 +240,41 @@
   <parameter name="SYNCHRONIZE_RESET" value="1" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\altera_xcvr_functions.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\altera_xcvr_functions.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\alt_xcvr_resync.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\alt_xcvr_resync.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\altera_xcvr_reset_control.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\altera_xcvr_reset_control.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\alt_xcvr_reset_counter.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\alt_xcvr_reset_counter.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\plain_files.txt"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\plain_files.txt"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\altera_xcvr_functions.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\altera_xcvr_functions.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\alt_xcvr_resync.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\alt_xcvr_resync.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\altera_xcvr_reset_control.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\altera_xcvr_reset_control.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\alt_xcvr_reset_counter.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\alt_xcvr_reset_counter.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_181\synth\plain_files.txt"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\xcvr_reset_controller\alt_mge_xcvr_reset_ctrl_channel\altera_xcvr_reset_control_1911\synth\plain_files.txt"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/alt_xcvr/altera_xcvr_reset_control/tcl/altera_xcvr_reset_control_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/alt_xcvr/altera_xcvr_reset_control/tcl/altera_xcvr_reset_control_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator

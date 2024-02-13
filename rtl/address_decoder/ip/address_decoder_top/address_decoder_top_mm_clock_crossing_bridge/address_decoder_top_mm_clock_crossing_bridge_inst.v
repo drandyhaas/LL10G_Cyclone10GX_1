@@ -6,7 +6,8 @@
 		.COMMAND_FIFO_DEPTH  (INTEGER_VALUE_FOR_COMMAND_FIFO_DEPTH),
 		.RESPONSE_FIFO_DEPTH (INTEGER_VALUE_FOR_RESPONSE_FIFO_DEPTH),
 		.MASTER_SYNC_DEPTH   (INTEGER_VALUE_FOR_MASTER_SYNC_DEPTH),
-		.SLAVE_SYNC_DEPTH    (INTEGER_VALUE_FOR_SLAVE_SYNC_DEPTH)
+		.SLAVE_SYNC_DEPTH    (INTEGER_VALUE_FOR_SLAVE_SYNC_DEPTH),
+		.SYNC_RESET          (INTEGER_VALUE_FOR_SYNC_RESET)
 	) u0 (
 		.m0_clk           (_connected_to_m0_clk_),           //   input,                 width = 1,   m0_clk.clk
 		.m0_reset         (_connected_to_m0_reset_),         //   input,                 width = 1, m0_reset.reset

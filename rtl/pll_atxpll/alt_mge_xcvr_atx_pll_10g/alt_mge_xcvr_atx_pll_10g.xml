@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.02.16.09:34:10"
- outputDirectory="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/pll_atxpll/alt_mge_xcvr_atx_pll_10g/">
+ date="2024.02.13.12:01:59"
+ outputDirectory="C:/gitwork/LL10G_Cyclone10GX_1/rtl/pll_atxpll/alt_mge_xcvr_atx_pll_10g/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -31,6 +31,12 @@
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
      defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -99,30 +105,31 @@
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_BOARD" value="default" />
   <parameter name="AUTO_UNIQUE_ID" value="" />
   <parameter name="AUTO_PLL_REFCLK0_CLOCK_RATE" value="-1" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\synth\alt_mge_xcvr_atx_pll_10g.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\synth\alt_mge_xcvr_atx_pll_10g.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\synth\alt_mge_xcvr_atx_pll_10g.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\synth\alt_mge_xcvr_atx_pll_10g.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/pll_atxpll/alt_mge_xcvr_atx_pll_10g.ip" />
+       path="C:/gitwork/LL10G_Cyclone10GX_1/rtl/pll_atxpll/alt_mge_xcvr_atx_pll_10g.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/alt_xcvr/altera_xcvr_pll/altera_xcvr_atx_pll_vi/tcl/altera_xcvr_atx_pll_a10_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/alt_xcvr/altera_xcvr_pll/altera_xcvr_atx_pll_vi/tcl/altera_xcvr_atx_pll_a10_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="alt_mge_xcvr_atx_pll_10g">"Generating: alt_mge_xcvr_atx_pll_10g"</message>
-   <message level="Info" culprit="alt_mge_xcvr_atx_pll_10g">"Generating: alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda"</message>
+   <message level="Info" culprit="alt_mge_xcvr_atx_pll_10g">"Generating: alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda"</message>
    <message level="Info" culprit="xcvr_atx_pll_a10_0">add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv</message>
    <message level="Info" culprit="xcvr_atx_pll_a10_0">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
    <message level="Info" culprit="xcvr_atx_pll_a10_0">add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv</message>
@@ -136,8 +143,8 @@
  </entity>
  <entity
    kind="altera_xcvr_atx_pll_a10"
-   version="18.1"
-   name="alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda">
+   version="19.1"
+   name="alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda">
   <parameter name="enable_atx_to_fpll_cascade_out" value="0" />
   <parameter name="hssi_pma_cgb_master_input_select" value="lcpll_top" />
   <parameter name="refclk_cnt" value="1" />
@@ -156,22 +163,22 @@
   <parameter name="enable_16G_path" value="0" />
   <parameter name="set_l_cascade_counter" value="4" />
   <parameter name="refclk_index" value="0" />
+  <parameter name="atx_pll_lf_cbig_size" value="lf_cbig_setting4" />
   <parameter
      name="hssi_pma_lc_refclk_select_mux_xmux_lc_scratch4_src"
      value="scratch4_src_lvpecl" />
-  <parameter name="atx_pll_lf_cbig_size" value="lf_cbig_setting4" />
   <parameter
      name="rcfg_param_labels"
-     value="rcfg_debug,Enable dynamic reconfiguration,Enable Altera Debug Master Endpoint,Separate reconfig_waitrequest from the status of AVMM arbitration with PreSICE,Enable avmm_busy port,Enable capability registers,Set user-defined IP identifier,Enable control and status registers,enable_pld_atx_cal_busy_port,Support mode,Protocol mode,Bandwidth,Number of PLL reference clocks,Selected reference clock source,Primary PLL clock output buffer,Enable PLL GX clock output port,Enable PLL GT clock output port,Enable PCIe clock output port,Enable cascade clock output port,Enable calibration status ports for HIP,Enable PCIe hard IP calibration,PLL output frequency,PLL integer reference clock frequency,PLL fractional reference clock frequency,PLL fractional reference clock frequency,Multiply factor (M-Counter),Divide factor (N-Counter),Divide factor (L-Counter),Divide factor (L-Cascade Counter),predivide factor (L-Cascade Predivider),Fractional multiply factor (K),Include Master Clock Generation Block,Clock division factor,Enable x6/xN non-bonded high-speed clock output port,Enable PCIe clock switch interface,Number of auxiliary MCGB clock input ports.,Enable bonding clock output ports,Enable feedback compensation bonding,PMA interface width,enable_pld_mcgb_cal_busy_port" />
+     value="rcfg_debug,Enable dynamic reconfiguration,Enable Native PHY Debug Master Endpoint,Separate reconfig_waitrequest from the status of AVMM arbitration with PreSICE,Enable avmm_busy port,Enable capability registers,Set user-defined IP identifier,Enable control and status registers,enable_pld_atx_cal_busy_port,Support mode,Protocol mode,Bandwidth,Number of PLL reference clocks,Selected reference clock source,Primary PLL clock output buffer,Enable PLL GX clock output port,Enable PLL GT clock output port,Enable PCIe clock output port,Enable cascade clock output port,Enable calibration status ports for HIP,Enable PCIe hard IP calibration,PLL output frequency,PLL integer reference clock frequency,PLL fractional reference clock frequency,PLL fractional reference clock frequency,Multiply factor (M-Counter),Divide factor (N-Counter),Divide factor (L-Counter),Divide factor (L-Cascade Counter),predivide factor (L-Cascade Predivider),Fractional multiply factor (K),Include Master Clock Generation Block,Clock division factor,Enable x6/xN non-bonded high-speed clock output port,Enable PCIe clock switch interface,Number of auxiliary MCGB clock input ports.,Enable bonding clock output ports,Enable feedback compensation bonding,PMA interface width,enable_pld_mcgb_cal_busy_port" />
   <parameter name="atx_pll_initial_settings" value="true" />
   <parameter name="l_cascade_predivider" value="1" />
   <parameter
      name="auto_list"
      value="62.123494 {m 83 effective_m 83 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 62.881098 {m 82 effective_m 82 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 63.657407 {m 81 effective_m 81 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 64.453125 {m 80 effective_m 80 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 65.268987 {m 79 effective_m 79 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 66.105769 {m 78 effective_m 78 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 66.964286 {m 77 effective_m 77 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 67.845395 {m 76 effective_m 76 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 68.750000 {m 75 effective_m 75 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 69.679054 {m 74 effective_m 74 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 70.633562 {m 73 effective_m 73 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 71.614583 {m 72 effective_m 72 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 72.623239 {m 71 effective_m 71 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 73.660714 {m 70 effective_m 70 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 74.728261 {m 69 effective_m 69 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 75.827206 {m 68 effective_m 68 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 76.958955 {m 67 effective_m 67 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 78.125000 {m 66 effective_m 66 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 79.326923 {m 65 effective_m 65 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 80.566406 {m 64 effective_m 64 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 81.845238 {m 63 effective_m 63 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 83.165323 {m 62 effective_m 62 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 84.528689 {m 61 effective_m 61 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 85.937500 {m 60 effective_m 60 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 87.394068 {m 59 effective_m 59 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 88.900862 {m 58 effective_m 58 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 90.460526 {m 57 effective_m 57 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 92.075893 {m 56 effective_m 56 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 93.750000 {m 55 effective_m 55 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 95.486111 {m 54 effective_m 54 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 97.287736 {m 53 effective_m 53 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 99.158654 {m 52 effective_m 52 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 101.102941 {m 51 effective_m 51 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 103.125000 {m 50 effective_m 50 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 105.229592 {m 49 effective_m 49 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 107.421875 {m 48 effective_m 48 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 109.707447 {m 47 effective_m 47 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 112.092391 {m 46 effective_m 46 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 114.583333 {m 45 effective_m 45 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 117.187500 {m 44 effective_m 44 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 119.912791 {m 43 effective_m 43 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 122.767857 {m 42 effective_m 42 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 124.246988 {m 83 effective_m 83 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 125.762195 {m 41 effective_m 41 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 127.314815 {m 81 effective_m 81 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 128.906250 {m 40 effective_m 40 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 130.537975 {m 79 effective_m 79 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 132.211538 {m 39 effective_m 39 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 133.928571 {m 77 effective_m 77 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 135.690789 {m 38 effective_m 38 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 137.500000 {m 75 effective_m 75 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 139.358108 {m 37 effective_m 37 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 141.267123 {m 73 effective_m 73 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 143.229167 {m 36 effective_m 36 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 145.246479 {m 71 effective_m 71 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 147.321429 {m 35 effective_m 35 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 149.456522 {m 69 effective_m 69 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 151.654412 {m 34 effective_m 34 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 153.917910 {m 67 effective_m 67 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 156.250000 {m 33 effective_m 33 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 158.653846 {m 65 effective_m 65 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 161.132813 {m 32 effective_m 32 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 163.690476 {m 63 effective_m 63 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 166.330645 {m 31 effective_m 31 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 169.057377 {m 61 effective_m 61 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 171.875000 {m 30 effective_m 30 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 174.788136 {m 59 effective_m 59 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 177.801724 {m 29 effective_m 29 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 180.921053 {m 57 effective_m 57 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 184.151786 {m 28 effective_m 28 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 187.500000 {m 55 effective_m 55 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 190.972222 {m 27 effective_m 27 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 194.575472 {m 53 effective_m 53 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 198.317308 {m 26 effective_m 26 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 202.205882 {m 51 effective_m 51 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 206.250000 {m 25 effective_m 25 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 210.459184 {m 49 effective_m 49 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 214.843750 {m 24 effective_m 24 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 219.414894 {m 47 effective_m 47 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 224.184783 {m 23 effective_m 23 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 229.166667 {m 45 effective_m 45 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 234.375000 {m 22 effective_m 22 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 239.825581 {m 43 effective_m 43 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 245.535714 {m 21 effective_m 21 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 248.493976 {m 83 effective_m 83 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 251.524390 {m 41 effective_m 41 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 254.629630 {m 81 effective_m 81 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 257.812500 {m 20 effective_m 20 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 261.075949 {m 79 effective_m 79 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 264.423077 {m 39 effective_m 39 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 267.857143 {m 77 effective_m 77 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 271.381579 {m 19 effective_m 19 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 275.000000 {m 75 effective_m 75 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 278.716216 {m 37 effective_m 37 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 282.534247 {m 73 effective_m 73 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 286.458333 {m 18 effective_m 18 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 290.492958 {m 71 effective_m 71 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 294.642857 {m 35 effective_m 35 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 298.913043 {m 69 effective_m 69 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 303.308824 {m 17 effective_m 17 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 307.835821 {m 67 effective_m 67 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 312.500000 {m 33 effective_m 33 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 317.307692 {m 65 effective_m 65 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 322.265625 {m 16 effective_m 16 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 327.380952 {m 63 effective_m 63 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 332.661290 {m 31 effective_m 31 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 338.114754 {m 61 effective_m 61 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 343.750000 {m 15 effective_m 15 n 1 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 349.576271 {m 59 effective_m 59 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 355.603448 {m 29 effective_m 29 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 361.842105 {m 57 effective_m 57 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 368.303571 {m 28 effective_m 28 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 375.000000 {m 55 effective_m 55 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 381.944444 {m 27 effective_m 27 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 389.150943 {m 53 effective_m 53 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 396.634615 {m 26 effective_m 26 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 404.411765 {m 51 effective_m 51 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 412.500000 {m 25 effective_m 25 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 420.918367 {m 49 effective_m 49 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 429.687500 {m 24 effective_m 24 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 438.829787 {m 47 effective_m 47 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 448.369565 {m 23 effective_m 23 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 458.333333 {m 45 effective_m 45 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 468.750000 {m 22 effective_m 22 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 479.651163 {m 43 effective_m 43 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 491.071429 {m 21 effective_m 21 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 496.987952 {m 83 effective_m 83 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 503.048780 {m 41 effective_m 41 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 509.259259 {m 81 effective_m 81 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 515.625000 {m 20 effective_m 20 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 522.151899 {m 79 effective_m 79 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 528.846154 {m 39 effective_m 39 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 535.714286 {m 77 effective_m 77 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 542.763158 {m 19 effective_m 19 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 550.000000 {m 75 effective_m 75 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 557.432432 {m 37 effective_m 37 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 565.068493 {m 73 effective_m 73 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 572.916667 {m 18 effective_m 18 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 580.985915 {m 71 effective_m 71 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 589.285714 {m 35 effective_m 35 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 597.826087 {m 69 effective_m 69 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 606.617647 {m 17 effective_m 17 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 615.671642 {m 67 effective_m 67 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 625.000000 {m 33 effective_m 33 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 634.615385 {m 65 effective_m 65 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 644.531250 {m 16 effective_m 16 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 654.761905 {m 63 effective_m 63 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 665.322581 {m 31 effective_m 31 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 676.229508 {m 61 effective_m 61 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 687.500000 {m 15 effective_m 15 n 2 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 699.152542 {m 59 effective_m 59 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 711.206897 {m 29 effective_m 29 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 723.684211 {m 57 effective_m 57 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 736.607143 {m 28 effective_m 28 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 750.000000 {m 55 effective_m 55 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 763.888889 {m 27 effective_m 27 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 778.301887 {m 53 effective_m 53 n 8 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0} 793.269231 {m 26 effective_m 26 n 4 l 2 l_cascade 1 l_cascade_predivider 1 k 1 tank_sel lctank2 tank_band lc_band0}" />
   <parameter name="atx_pll_is_cascaded_pll" value="false" />
-  <parameter name="hssi_refclk_divider_iostandard" value="lvpecl" />
   <parameter name="atx_pll_dsm_fractional_division" value="1" />
   <parameter name="atx_pll_is_otn" value="false" />
+  <parameter name="hssi_refclk_divider_iostandard" value="lvpecl" />
   <parameter name="enable_16G_buffer_fnl" value="false" />
   <parameter name="enable_ext_lockdetect_ports" value="0" />
   <parameter name="atx_pll_tank_voltage_fine" value="vreg_setting5" />
@@ -245,8 +252,8 @@
   <parameter name="atx_pll_dprio_vreg1_boost_step_size" value="0" />
   <parameter name="atx_pll_f_min_vco" value="7200000000 Hz" />
   <parameter name="test_mode" value="0" />
-  <parameter name="hssi_refclk_divider_vcm_pup" value="pup_off" />
   <parameter name="atx_pll_underrange_voltage" value="under_setting4" />
+  <parameter name="hssi_refclk_divider_vcm_pup" value="pup_off" />
   <parameter name="atx_pll_output_regulator_supply" value="vreg1v_setting0" />
   <parameter name="vco_freq" value="10312.5 MHz" />
   <parameter name="atx_pll_f_max_lcnt_fpll_cascading" value="1200000000" />
@@ -256,10 +263,10 @@
   <parameter name="set_fref_clock_frequency" value="125.0" />
   <parameter name="atx_pll_l_counter_scratch" value="1" />
   <parameter name="rcfg_profile_cnt" value="2" />
+  <parameter name="atx_pll_power_rail_et" value="950" />
   <parameter
      name="hssi_pma_lc_refclk_select_mux_inclk4_logical_to_physical_mapping"
      value="power_down" />
-  <parameter name="atx_pll_power_rail_et" value="950" />
   <parameter name="dbg_embedded_debug_enable" value="0" />
   <parameter name="atx_pll_cal_status" value="cal_in_progress" />
   <parameter name="is_protocol_PCIe" value="0" />
@@ -270,10 +277,10 @@
      value="scratch3_src_lvpecl" />
   <parameter name="atx_pll_cgb_div" value="1" />
   <parameter name="prot_mode_fnl" value="basic_tx" />
+  <parameter name="atx_pll_hclk_divide" value="1" />
   <parameter
      name="hssi_pma_lc_refclk_select_mux_xpm_iqref_mux_scratch1_src"
      value="scratch1_power_down" />
-  <parameter name="atx_pll_hclk_divide" value="1" />
   <parameter name="enable_hfreq_clk" value="1" />
   <parameter name="atx_pll_silicon_rev" value="20nm1" />
   <parameter name="atx_pll_clk_high_perf_voltage" value="0" />
@@ -422,13 +429,13 @@
   <parameter
      name="hssi_pma_lc_refclk_select_mux_xpm_iqref_mux_scratch3_src"
      value="scratch3_power_down" />
-  <parameter name="hssi_refclk_divider_sel_pldclk" value="iqclk_sel_lvpecl" />
   <parameter name="atx_pll_f_max_x1" value="8700000000 Hz" />
+  <parameter name="hssi_refclk_divider_sel_pldclk" value="iqclk_sel_lvpecl" />
   <parameter name="atx_pll_max_fractional_percentage" value="100" />
+  <parameter name="atx_pll_pma_width" value="64" />
   <parameter
      name="hssi_refclk_divider_core_clk_lvpecl"
      value="core_clk_lvpecl_off" />
-  <parameter name="atx_pll_pma_width" value="64" />
   <parameter name="atx_pll_tank_sel" value="lctank1" />
   <parameter name="rcfg_mif_file_enable" value="0" />
   <parameter name="enable_manual_configuration" value="1" />
@@ -476,10 +483,10 @@
   <parameter name="select_manual_config" value="false" />
   <parameter name="rcfg_jtag_enable" value="0" />
   <parameter name="atx_pll_vccdreg_fw" value="vreg_fw5" />
+  <parameter name="atx_pll_f_max_vco_fractional" value="0 hz" />
   <parameter
      name="hssi_pma_lc_refclk_select_mux_xmux_lc_scratch0_src"
      value="scratch0_src_lvpecl" />
-  <parameter name="atx_pll_f_max_vco_fractional" value="0 hz" />
   <parameter name="rcfg_enable_avmm_busy_port" value="0" />
   <parameter name="dbg_user_identifier" value="0" />
   <parameter name="atx_pll_lf_resistance" value="lf_setting1" />
@@ -487,94 +494,94 @@
   <parameter name="support_mode" value="user_mode" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\twentynm_xcvr_avmm.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\twentynm_xcvr_avmm.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_resync.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_resync.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_arbiter.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_arbiter.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\a10_avmm_h.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\a10_avmm_h.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\altera_xcvr_native_a10_functions_h.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\altera_xcvr_native_a10_functions_h.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_atx_pll_rcfg_arb.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_atx_pll_rcfg_arb.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\a10_xcvr_atx_pll.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\a10_xcvr_atx_pll.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_pll_embedded_debug.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_pll_embedded_debug.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_pll_avmm_csr.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_pll_avmm_csr.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\plain_files.txt"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\plain_files.txt"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\docs\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda_parameters.csv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\docs\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda_parameters.csv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_atx_pll_rcfg_opt_logic_lszmxda.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_atx_pll_rcfg_opt_logic_urgttda.sv"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\twentynm_xcvr_avmm.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\twentynm_xcvr_avmm.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_resync.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_resync.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_arbiter.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_arbiter.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\a10_avmm_h.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\a10_avmm_h.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\altera_xcvr_native_a10_functions_h.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\altera_xcvr_native_a10_functions_h.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_atx_pll_rcfg_arb.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_atx_pll_rcfg_arb.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\a10_xcvr_atx_pll.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\a10_xcvr_atx_pll.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_pll_embedded_debug.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_pll_embedded_debug.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_pll_avmm_csr.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_pll_avmm_csr.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\plain_files.txt"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\plain_files.txt"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\docs\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda_parameters.csv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\docs\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda_parameters.csv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda.sv"
        attributes="" />
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_181\synth\alt_xcvr_atx_pll_rcfg_opt_logic_lszmxda.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\pll_atxpll\alt_mge_xcvr_atx_pll_10g\altera_xcvr_atx_pll_a10_191\synth\alt_xcvr_atx_pll_rcfg_opt_logic_urgttda.sv"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/alt_xcvr/altera_xcvr_pll/altera_xcvr_atx_pll_vi/tcl/altera_xcvr_atx_pll_a10_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/alt_xcvr/altera_xcvr_pll/altera_xcvr_atx_pll_vi/tcl/altera_xcvr_atx_pll_a10_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="alt_mge_xcvr_atx_pll_10g" as="xcvr_atx_pll_a10_0" />
   <messages>
-   <message level="Info" culprit="alt_mge_xcvr_atx_pll_10g">"Generating: alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda"</message>
+   <message level="Info" culprit="alt_mge_xcvr_atx_pll_10g">"Generating: alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda"</message>
    <message level="Info" culprit="xcvr_atx_pll_a10_0">add_fileset_file ./twentynm_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../alt_xcvr_core/nf/twentynm_xcvr_avmm.sv</message>
    <message level="Info" culprit="xcvr_atx_pll_a10_0">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
    <message level="Info" culprit="xcvr_atx_pll_a10_0">add_fileset_file ./alt_xcvr_arbiter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_arbiter.sv</message>

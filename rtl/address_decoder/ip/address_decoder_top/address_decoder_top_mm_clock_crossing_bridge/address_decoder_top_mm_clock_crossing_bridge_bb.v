@@ -6,7 +6,8 @@ module address_decoder_top_mm_clock_crossing_bridge #(
 		parameter COMMAND_FIFO_DEPTH  = 4,
 		parameter RESPONSE_FIFO_DEPTH = 4,
 		parameter MASTER_SYNC_DEPTH   = 3,
-		parameter SLAVE_SYNC_DEPTH    = 3
+		parameter SLAVE_SYNC_DEPTH    = 3,
+		parameter SYNC_RESET          = 0
 	) (
 		input  wire                        m0_clk,           //   m0_clk.clk
 		input  wire                        m0_reset,         // m0_reset.reset

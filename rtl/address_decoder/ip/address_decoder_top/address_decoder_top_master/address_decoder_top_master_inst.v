@@ -22,7 +22,8 @@
 		.UAV_CONSTANT_BURST_BEHAVIOR (INTEGER_VALUE_FOR_UAV_CONSTANT_BURST_BEHAVIOR),
 		.AV_LINEWRAPBURSTS           (INTEGER_VALUE_FOR_AV_LINEWRAPBURSTS),
 		.AV_REGISTERINCOMINGSIGNALS  (INTEGER_VALUE_FOR_AV_REGISTERINCOMINGSIGNALS),
-		.SYNC_RESET                  (INTEGER_VALUE_FOR_SYNC_RESET)
+		.SYNC_RESET                  (INTEGER_VALUE_FOR_SYNC_RESET),
+		.USE_OUTPUTENABLE            (INTEGER_VALUE_FOR_USE_OUTPUTENABLE)
 	) u0 (
 		.clk               (_connected_to_clk_),               //   input,   width = 1,                       clk.clk
 		.reset             (_connected_to_reset_),             //   input,   width = 1,                     reset.reset

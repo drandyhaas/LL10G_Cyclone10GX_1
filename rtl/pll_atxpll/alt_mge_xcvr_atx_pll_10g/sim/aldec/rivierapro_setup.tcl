@@ -1,5 +1,5 @@
 
-# (C) 2001-2023 Intel Corporation. All rights reserved.
+# (C) 2001-2024 Intel Corporation. All rights reserved.
 # Your use of Intel Corporation's design tools, logic functions and 
 # other software and tools, and its AMPP partner logic functions, and 
 # any output files any of the foregoing (including device programming 
@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 222 win32 2023.02.16.09:34:09
+# ACDS 23.4 79 win32 2024.02.13.12:01:55
 # ----------------------------------------
 # Auto-generated simulation script rivierapro_setup.tcl
 # ----------------------------------------
@@ -113,7 +113,7 @@ if ![info exists QSYS_SIMDIR] {
 }
 
 if ![info exists QUARTUS_INSTALL_DIR] { 
-  set QUARTUS_INSTALL_DIR "E:/intelfpga_pro/18.1/quartus/"
+  set QUARTUS_INSTALL_DIR "E:/intelfpga_pro/23.4/quartus/"
 }
 
 if ![info exists USER_DEFINED_COMPILE_OPTIONS] { 
@@ -147,7 +147,7 @@ source $QSYS_SIMDIR/common/riviera_files.tcl
 set ELAB_OPTIONS ""
 set SIM_OPTIONS ""
 set LD_LIBRARY_PATH [dict create]
-if ![ string match "*-64 vsim*" [ vsim -version ] ] {
+if { ![ string match "*-64 vsim*" [ vsim -version ] ] } {
   set SIMULATOR_TOOL_BITNESS "bit_32"
 } else {
   set SIMULATOR_TOOL_BITNESS "bit_64"
@@ -179,7 +179,23 @@ alias file_copy {
   }
   set memory_files [list]
   set memory_files [concat $memory_files [alt_mge_xcvr_atx_pll_10g::get_memory_files "$QSYS_SIMDIR"]]
-  foreach file $memory_files { file copy -force $file ./ }
+  foreach file $memory_files {
+  set itercount 0
+  while {$itercount < 10  && [file type $file] eq "link"} {
+    set nf [file readlink $file]
+    if {[string index $nf 0] ne "/"} {
+    set nf [file dirname $file]/$nf
+    }
+    set file $nf
+  }
+  set dest_file [file join ./ [file tail $file]]
+  set normalized_src [alt_mge_xcvr_atx_pll_10g::normalize_path "$file"]
+  set normalized_dest [alt_mge_xcvr_atx_pll_10g::normalize_path "$dest_file"]
+  if { $normalized_src ne $normalized_dest } {
+    file copy -force $file ./
+  }
+  }
+  
 }
 
 # ----------------------------------------
@@ -188,6 +204,23 @@ alias file_copy {
 set logical_libraries [list "work" "work_lib" "altera_ver" "lpm_ver" "sgate_ver" "altera_mf_ver" "altera_lnsim_ver" "cyclone10gx_ver" "cyclone10gx_hssi_ver" "cyclone10gx_hip_ver"]
 
 proc ensure_lib { lib } { if ![file isdirectory $lib] { vlib $lib } }
+
+# ----------------------------------------
+# get DPI libraries
+set libraries [dict create]
+set libraries [dict merge $libraries [alt_mge_xcvr_atx_pll_10g::get_dpi_libraries "$QSYS_SIMDIR"]]
+set dpi_libraries [dict values $libraries]
+
+# ----------------------------------------
+# setup shared libraries
+set DPI_LIBRARIES_ELAB ""
+if { [llength $dpi_libraries] != 0 } {
+  echo "Using DPI Library settings"
+  foreach library $dpi_libraries {
+    append DPI_LIBRARIES_ELAB "-sv_lib $library "
+  }
+}
+
 ensure_lib      ./libraries/    
 ensure_lib      ./libraries/work
 vmap       work ./libraries/work
@@ -262,7 +295,7 @@ alias elab {
   }
   set elabcommand " $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS"
   foreach library $logical_libraries { append elabcommand " -L $library" }
-  append elabcommand " $TOP_LEVEL_NAME"
+  append elabcommand " $TOP_LEVEL_NAME $DPI_LIBRARIES_ELAB "
   eval vsim +access +r $elabcommand
 }
 
@@ -274,7 +307,7 @@ alias elab_debug {
   }
   set elabcommand " $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS"
   foreach library $logical_libraries { append elabcommand " -L $library" }
-  append elabcommand " $TOP_LEVEL_NAME"
+  append elabcommand " $TOP_LEVEL_NAME $DPI_LIBRARIES_ELAB "
   eval vsim -dbg -O2 +access +r $elabcommand
 }
 

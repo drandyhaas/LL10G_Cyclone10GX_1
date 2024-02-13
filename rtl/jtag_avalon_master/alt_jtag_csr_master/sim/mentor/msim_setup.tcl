@@ -1,5 +1,5 @@
 
-# (C) 2001-2023 Intel Corporation. All rights reserved.
+# (C) 2001-2024 Intel Corporation. All rights reserved.
 # Your use of Intel Corporation's design tools, logic functions and 
 # other software and tools, and its AMPP partner logic functions, and 
 # any output files any of the foregoing (including device programming 
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Intel IP within the design.
 # ----------------------------------------
-# ACDS 18.1 222 win32 2023.02.16.09:33:47
+# ACDS 23.4 79 win32 2024.02.13.12:01:34
 
 # ----------------------------------------
 # Initialize variables
@@ -113,7 +113,7 @@ if ![info exists QSYS_SIMDIR] {
 }
 
 if ![info exists QUARTUS_INSTALL_DIR] { 
-  set QUARTUS_INSTALL_DIR "E:/intelfpga_pro/18.1/quartus/"
+  set QUARTUS_INSTALL_DIR "E:/intelfpga_pro/23.4/quartus/"
 }
 
 if ![info exists USER_DEFINED_COMPILE_OPTIONS] { 
@@ -150,7 +150,7 @@ source $QSYS_SIMDIR/common/modelsim_files.tcl
 set ELAB_OPTIONS ""
 set SIM_OPTIONS ""
 set LD_LIBRARY_PATH [dict create]
-if ![ string match "*-64 vsim*" [ vsimVersionString ] ] {
+if { ![ string match "*-64 vsim*" [ vsimVersionString ] ] } {
   set SIMULATOR_TOOL_BITNESS "bit_32"
 } else {
   set SIMULATOR_TOOL_BITNESS "bit_64"
@@ -167,7 +167,7 @@ proc modelsim_ae_select {force_select_modelsim_ae} {
   if [string is true -strict $force_select_modelsim_ae] {
     return 1
   }
-  return [string match -nocase "*ModelSim*Intel*FPGA*" [ vsimVersionString ]]
+  return [string match -nocase "*Intel*FPGA*" [ vsimVersionString ]]
 
 }
 
@@ -180,7 +180,23 @@ alias file_copy {
   }
   set memory_files [list]
   set memory_files [concat $memory_files [alt_jtag_csr_master::get_memory_files "$QSYS_SIMDIR"]]
-  foreach file $memory_files { file copy -force $file ./ }
+  foreach file $memory_files {
+  set itercount 0
+  while {$itercount < 10  && [file type $file] eq "link"} {
+    set nf [file readlink $file]
+    if {[string index $nf 0] ne "/"} {
+    set nf [file dirname $file]/$nf
+    }
+    set file $nf
+  }
+  set dest_file [file join ./ [file tail $file]]
+  set normalized_src [alt_jtag_csr_master::normalize_path "$file"]
+  set normalized_dest [alt_jtag_csr_master::normalize_path "$dest_file"]
+  if { $normalized_src ne $normalized_dest } {
+    file copy -force $file ./
+  }
+  }
+  
 }
 
 # ----------------------------------------
@@ -193,6 +209,23 @@ ensure_lib          ./libraries/
 ensure_lib          ./libraries/work/
 vmap       work     ./libraries/work/
 vmap       work_lib ./libraries/work/
+
+# ----------------------------------------
+# get DPI libraries
+set libraries [dict create]
+set libraries [dict merge $libraries [alt_jtag_csr_master::get_dpi_libraries "$QSYS_SIMDIR"]]
+set dpi_libraries [dict values $libraries]
+
+# ----------------------------------------
+# setup shared libraries
+set DPI_LIBRARIES_ELAB ""
+if { [llength $dpi_libraries] != 0 } {
+  echo "Using DPI Library settings"
+  foreach library $dpi_libraries {
+    append DPI_LIBRARIES_ELAB "-sv_lib $library "
+  }
+}
+
 if [string is false -strict [modelsim_ae_select $FORCE_MODELSIM_AE_SELECTION]] {
   ensure_lib                      ./libraries/altera_ver/          
   vmap       altera_ver           ./libraries/altera_ver/          
@@ -239,6 +272,7 @@ alias dev_com {
     eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/mentor/cyclone10gx_hip_atoms_ncrypt.v"  -work cyclone10gx_hip_ver 
     eval  vlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/cyclone10gx_hip_atoms.v"                -work cyclone10gx_hip_ver 
   }
+  
 }
 
 # ----------------------------------------
@@ -268,20 +302,20 @@ alias elab {
   }
   set elabcommand " $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS"
   foreach library $logical_libraries { append elabcommand " -L $library" }
-  append elabcommand " $TOP_LEVEL_NAME"
+  append elabcommand " $TOP_LEVEL_NAME $DPI_LIBRARIES_ELAB "
   eval vsim $elabcommand
 }
 
 # ----------------------------------------
-# Elaborate the top level design with -novopt option
+# Elaborate the top level design with -voptargs=+acc option
 alias elab_debug {
   if [string is false -strict $SILENCE] {
     echo "\[exec\] elab_debug"
   }
   set elabcommand " $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS"
   foreach library $logical_libraries { append elabcommand " -L $library" }
-  append elabcommand " $TOP_LEVEL_NAME"
-  eval vsim -novopt $elabcommand
+  append elabcommand " $TOP_LEVEL_NAME $DPI_LIBRARIES_ELAB "
+  eval vsim -voptargs=+acc $elabcommand
 }
 
 # ----------------------------------------
@@ -293,7 +327,7 @@ alias ld "
 "
 
 # ----------------------------------------
-# Compile all the design files and elaborate the top level design with  -novopt
+# Compile all the design files and elaborate the top level design with  -voptargs=+acc
 alias ld_debug "
   dev_com
   com
@@ -313,11 +347,11 @@ alias h {
   echo
   echo "elab                                              -- Elaborate top level design"
   echo
-  echo "elab_debug                                        -- Elaborate the top level design with -novopt option"
+  echo "elab_debug                                        -- Elaborate the top level design with -voptargs=+acc option"
   echo
   echo "ld                                                -- Compile all the design files and elaborate the top level design"
   echo
-  echo "ld_debug                                          -- Compile all the design files and elaborate the top level design with  -novopt"
+  echo "ld_debug                                          -- Compile all the design files and elaborate the top level design with  -voptargs=+acc"
   echo
   echo 
   echo

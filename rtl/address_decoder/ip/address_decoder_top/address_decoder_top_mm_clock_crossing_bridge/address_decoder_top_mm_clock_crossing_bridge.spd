@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simPackage>
  <file
-   path="altera_avalon_mm_clock_crossing_bridge_181/sim/address_decoder_top_mm_clock_crossing_bridge_altera_avalon_mm_clock_crossing_bridge_181_kqxyhsq.v"
+   path="st_dc_fifo_1950/sim/address_decoder_top_mm_clock_crossing_bridge_st_dc_fifo_1950_w4zc75y.v"
    type="VERILOG"
-   library="altera_avalon_mm_clock_crossing_bridge_181" />
+   library="st_dc_fifo_1950" />
  <file
-   path="altera_avalon_mm_clock_crossing_bridge_181/sim/altera_avalon_dc_fifo.v"
-   type="VERILOG"
-   library="altera_avalon_mm_clock_crossing_bridge_181" />
+   path="st_dc_fifo_1950/sim/altera_reset_synchronizer.v"
+   type="SYSTEM_VERILOG"
+   library="st_dc_fifo_1950" />
  <file
-   path="altera_avalon_mm_clock_crossing_bridge_181/sim/altera_dcfifo_synchronizer_bundle.v"
+   path="st_dc_fifo_1950/sim/altera_dcfifo_synchronizer_bundle.v"
    type="VERILOG"
-   library="altera_avalon_mm_clock_crossing_bridge_181" />
+   library="st_dc_fifo_1950" />
  <file
-   path="altera_avalon_mm_clock_crossing_bridge_181/sim/altera_std_synchronizer_nocut.v"
+   path="st_dc_fifo_1950/sim/altera_std_synchronizer_nocut.v"
    type="VERILOG"
-   library="altera_avalon_mm_clock_crossing_bridge_181" />
+   library="st_dc_fifo_1950" />
+ <file
+   path="mm_ccb_1921/sim/address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_c5maiwy.v"
+   type="VERILOG"
+   library="mm_ccb_1921"
+   hasInlineConfiguration="true" />
+ <file
+   path="mm_ccb_1921/sim/address_decoder_top_mm_clock_crossing_bridge_mm_ccb_st_dc_fifo_1921_ed7rbdy.v"
+   type="VERILOG"
+   library="mm_ccb_1921"
+   hasInlineConfiguration="true" />
+ <file
+   path="mm_ccb_1921/sim/address_decoder_top_mm_clock_crossing_bridge_mm_ccb_1921_lcsq4ni.v"
+   type="VERILOG"
+   library="mm_ccb_1921" />
  <file
    path="sim/address_decoder_top_mm_clock_crossing_bridge.v"
    type="VERILOG"
@@ -24,4 +38,5 @@
  <topLevel
    name="address_decoder_top_mm_clock_crossing_bridge.address_decoder_top_mm_clock_crossing_bridge" />
  <deviceFamily name="cyclone10gx" />
+ <device name="10CX220YF780I5G" />
 </simPackage>

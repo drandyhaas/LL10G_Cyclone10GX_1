@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.03.22.12:36:18"
+ date="2024.02.13.11:57:38"
  outputDirectory="C:/gitwork/LL10G_Cyclone10GX_1/myfifo/">
  <perimeter>
   <parameter
@@ -33,6 +33,12 @@
      defaultValue="5"
      onHdl="0"
      affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
+     onHdl="0"
+     affectsHdl="1" />
   <interface name="fifo_input" kind="conduit" start="0">
    <property name="associatedClock" value="" />
    <property name="associatedReset" value="" />
@@ -59,6 +65,7 @@
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_BOARD" value="default" />
   <parameter name="AUTO_UNIQUE_ID" value="" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
   <generatedFiles>
@@ -75,14 +82,14 @@
    <file path="C:/gitwork/LL10G_Cyclone10GX_1/myfifo.ip" />
   </sourceFiles>
   <childSourceFiles>
-   <file path="E:/intelfpga_pro/18.1/ip/altera/megafunctions/fifo/fifo_hw.tcl" />
+   <file path="E:/intelfpga_pro/23.4/ip/altera/megafunctions/fifo/fifo_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="myfifo">"Generating: myfifo"</message>
-   <message level="Info" culprit="myfifo">"Generating: myfifo_fifo_181_3qmqbnq"</message>
+   <message level="Info" culprit="myfifo">"Generating: myfifo_fifo_1924_idgkmhq"</message>
   </messages>
  </entity>
- <entity kind="fifo" version="18.1" name="myfifo_fifo_181_3qmqbnq">
+ <entity kind="fifo" version="19.2.4" name="myfifo_fifo_1924_idgkmhq">
   <parameter name="GUI_Full" value="true" />
   <parameter name="GUI_RdUsedw_width" value="10" />
   <parameter name="GUI_AlmostFullThr" value="1" />
@@ -128,27 +135,27 @@
   <parameter name="GUI_Width" value="64" />
   <generatedFiles>
    <file
-       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_181\synth\myfifo_fifo_181_3qmqbnq.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_1924\synth\myfifo_fifo_1924_idgkmhq.v"
        attributes="" />
    <file
-       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_181\synth\myfifo_fifo_181_3qmqbnq.sdc"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_1924\synth\myfifo_fifo_1924_idgkmhq.sdc"
        attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_181\synth\myfifo_fifo_181_3qmqbnq.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_1924\synth\myfifo_fifo_1924_idgkmhq.v"
        attributes="" />
    <file
-       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_181\synth\myfifo_fifo_181_3qmqbnq.sdc"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\myfifo\fifo_1924\synth\myfifo_fifo_1924_idgkmhq.sdc"
        attributes="NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION" />
   </childGeneratedFiles>
   <sourceFiles>
-   <file path="E:/intelfpga_pro/18.1/ip/altera/megafunctions/fifo/fifo_hw.tcl" />
+   <file path="E:/intelfpga_pro/23.4/ip/altera/megafunctions/fifo/fifo_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="myfifo" as="fifo_0" />
   <messages>
-   <message level="Info" culprit="myfifo">"Generating: myfifo_fifo_181_3qmqbnq"</message>
+   <message level="Info" culprit="myfifo">"Generating: myfifo_fifo_1924_idgkmhq"</message>
   </messages>
  </entity>
 </deploy>

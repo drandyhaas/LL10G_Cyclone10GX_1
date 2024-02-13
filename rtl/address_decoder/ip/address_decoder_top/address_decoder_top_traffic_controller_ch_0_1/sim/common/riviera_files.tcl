@@ -2,7 +2,7 @@
 namespace eval address_decoder_top_traffic_controller_ch_0_1 {
   proc get_design_libraries {} {
     set libraries [dict create]
-    dict set libraries altera_merlin_slave_translator_181            1
+    dict set libraries altera_merlin_slave_translator_191            1
     dict set libraries address_decoder_top_traffic_controller_ch_0_1 1
     return $libraries
   }
@@ -19,7 +19,7 @@ namespace eval address_decoder_top_traffic_controller_ch_0_1 {
   
   proc get_design_files {USER_DEFINED_COMPILE_OPTIONS USER_DEFINED_VERILOG_COMPILE_OPTIONS USER_DEFINED_VHDL_COMPILE_OPTIONS QSYS_SIMDIR} {
     set design_files [list]
-    lappend design_files "vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_merlin_slave_translator_181/sim/address_decoder_top_traffic_controller_ch_0_1_altera_merlin_slave_translator_181_5aswt6a.sv"]\"  -work altera_merlin_slave_translator_181"
+    lappend design_files "vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/../altera_merlin_slave_translator_191/sim/address_decoder_top_traffic_controller_ch_0_1_altera_merlin_slave_translator_191_x56fcki.sv"]\"  -work altera_merlin_slave_translator_191"
     lappend design_files "vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS  \"[normalize_path "$QSYS_SIMDIR/address_decoder_top_traffic_controller_ch_0_1.v"]\"  -work address_decoder_top_traffic_controller_ch_0_1"                                                                      
     return $design_files
   }
@@ -63,4 +63,10 @@ namespace eval address_decoder_top_traffic_controller_ch_0_1 {
       } 
       return $path 
   } 
+  proc get_dpi_libraries {QSYS_SIMDIR} {
+    set libraries [dict create]
+    
+    return $libraries
+  }
+  
 }

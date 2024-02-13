@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="myfifo" kind="myfifo" version="1.0" fabric="QSYS">
- <!-- Format version 18.1 222 (Future versions may contain additional information.) -->
- <!-- 2023.03.22.12:36:18 -->
+ <!-- Format version 23.4 79 (Future versions may contain additional information.) -->
+ <!-- 2024.02.13.11:57:38 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
@@ -48,6 +48,15 @@
   <valid>true</valid>
   <sysinfo_type>DEVICE_SPEEDGRADE</sysinfo_type>
  </parameter>
+ <parameter name="AUTO_BOARD">
+  <type>java.lang.String</type>
+  <value>default</value>
+  <derived>false</derived>
+  <enabled>true</enabled>
+  <visible>false</visible>
+  <valid>true</valid>
+  <sysinfo_type>BOARD</sysinfo_type>
+ </parameter>
  <parameter name="deviceFamily">
   <type>java.lang.String</type>
   <value>Cyclone 10 GX</value>
@@ -65,7 +74,15 @@
   <visible>true</visible>
   <valid>true</valid>
  </parameter>
- <module name="fifo_0" kind="fifo" version="18.1" path="fifo_0">
+ <module
+   name="fifo_0"
+   kind="fifo"
+   version="19.2.4"
+   entity="myfifo_fifo_1924_idgkmhq"
+   library="fifo_1924"
+   path="fifo_0"
+   hpath="fifo_0"
+   className="fifo">
   <!-- Describes a single module. Module parameters are
 the requested settings for a module instance. -->
   <parameter name="DEVICE_FAMILY">
@@ -429,7 +446,7 @@ the requested settings for a module instance. -->
    <visible>true</visible>
    <valid>true</valid>
   </parameter>
-  <interface name="fifo_input" kind="conduit_end" version="18.1">
+  <interface name="fifo_input" kind="conduit_end" version="23.4">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -516,7 +533,7 @@ parameters are a RESULT of the module parameters. -->
     <role>aclr</role>
    </port>
   </interface>
-  <interface name="fifo_output" kind="conduit_end" version="18.1">
+  <interface name="fifo_output" kind="conduit_end" version="23.4">
    <!-- The connection points exposed by a module instance for the
 particular module parameters. Connection points and their
 parameters are a RESULT of the module parameters. -->
@@ -604,7 +621,7 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IModule</subtype>
   <displayName>FIFO Intel FPGA IP</displayName>
-  <version>18.1</version>
+  <version>19.2.4</version>
  </plugin>
  <plugin>
   <instanceCount>2</instanceCount>
@@ -612,8 +629,8 @@ parameters are a RESULT of the module parameters. -->
   <type>com.altera.entityinterfaces.IElementClass</type>
   <subtype>com.altera.entityinterfaces.IMutableConnectionPoint</subtype>
   <displayName>Conduit</displayName>
-  <version>18.1</version>
+  <version>23.4</version>
  </plugin>
- <reportVersion>18.1 222</reportVersion>
+ <reportVersion>23.4 79</reportVersion>
  <uniqueIdentifier></uniqueIdentifier>
 </EnsembleReport>

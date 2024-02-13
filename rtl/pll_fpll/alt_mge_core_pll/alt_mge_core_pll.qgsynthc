@@ -3,16 +3,7 @@
   <instanceKey xsi:type="xs:string">alt_mge_core_pll</instanceKey>
   <instanceData xsi:type="data">
     <parameters></parameters>
-    <interconnectAssignments>
-      <interconnectAssignment>
-        <name>$system.qsys_mm.clockCrossingAdapter</name>
-        <value>HANDSHAKE</value>
-      </interconnectAssignment>
-      <interconnectAssignment>
-        <name>$system.qsys_mm.maxAdditionalLatency</name>
-        <value>0</value>
-      </interconnectAssignment>
-    </interconnectAssignments>
+    <interconnectAssignments></interconnectAssignments>
     <className>alt_mge_core_pll</className>
     <version>1.0</version>
     <name>alt_mge_core_pll</name>
@@ -1119,7 +1110,7 @@
           </parameter>
           <parameter>
             <name>cmu_fpll_reference_clock_frequency_scratch</name>
-            <value>0 hz</value>
+            <value>644531250</value>
           </parameter>
           <parameter>
             <name>cmu_fpll_set_fpll_input_freq_range</name>
@@ -2332,7 +2323,7 @@
         </parameters>
         <interconnectAssignments></interconnectAssignments>
         <className>altera_xcvr_fpll_a10</className>
-        <version>18.1</version>
+        <version>19.1</version>
         <name>xcvr_fpll_a10_0</name>
         <uniqueName>altera_xcvr_fpll_a10</uniqueName>
         <fixedName>altera_xcvr_fpll_a10</fixedName>

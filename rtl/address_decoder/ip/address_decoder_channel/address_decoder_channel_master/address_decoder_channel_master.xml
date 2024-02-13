@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.02.16.09:31:36"
- outputDirectory="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/address_decoder/ip/address_decoder_channel/address_decoder_channel_master/">
+ date="2024.02.13.12:01:44"
+ outputDirectory="C:/gitwork/LL10G_Cyclone10GX_1/rtl/address_decoder/ip/address_decoder_channel/address_decoder_channel_master/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -24,13 +24,19 @@
   <parameter
      name="AUTO_DEVICE"
      type="String"
-     defaultValue="10CX220YF780I6G"
+     defaultValue="10CX220YF780I5G"
      onHdl="0"
      affectsHdl="1" />
   <parameter
      name="AUTO_DEVICE_SPEEDGRADE"
      type="String"
-     defaultValue="6"
+     defaultValue="5"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_BOARD"
+     type="String"
+     defaultValue="default"
      onHdl="0"
      affectsHdl="1" />
   <parameter
@@ -171,6 +177,16 @@
    <property name="writeLatency" value="0" />
    <property name="writeWaitStates" value="0" />
    <property name="writeWaitTime" value="0" />
+   <property name="dfhFeatureGuid" value="0" />
+   <property name="dfhGroupId" value="0" />
+   <property name="dfhParameterId" value="" />
+   <property name="dfhParameterName" value="" />
+   <property name="dfhParameterVersion" value="" />
+   <property name="dfhParameterData" value="" />
+   <property name="dfhParameterDataLength" value="" />
+   <property name="dfhFeatureMajorVersion" value="0" />
+   <property name="dfhFeatureMinorVersion" value="0" />
+   <property name="dfhFeatureId" value="35" />
    <port name="av_address" direction="input" role="address" width="16" />
    <port name="av_waitrequest" direction="output" role="waitrequest" width="1" />
    <port name="av_read" direction="input" role="read" width="1" />
@@ -188,6 +204,7 @@
   <parameter name="AUTO_GENERATION_ID" value="0" />
   <parameter name="AUTO_DEVICE" value="10CX220YF780I5G" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone 10 GX" />
+  <parameter name="AUTO_BOARD" value="default" />
   <parameter name="AUTO_AVALON_UNIVERSAL_MASTER_0_ADDRESS_WIDTH" value="-1" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
@@ -195,50 +212,50 @@
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="5" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\synth\address_decoder_channel_master.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\synth\address_decoder_channel_master.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\synth\address_decoder_channel_master.v"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\synth\address_decoder_channel_master.v"
        attributes="CONTAINS_INLINE_CONFIGURATION" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="C:/Users/ahaas/AppData/Local/Temp/alt9404_3265990298192936513.dir/0003_alt_em10g32_0_gen/rtl/address_decoder/ip/address_decoder_channel/address_decoder_channel_master.ip" />
+       path="C:/gitwork/LL10G_Cyclone10GX_1/rtl/address_decoder/ip/address_decoder_channel/address_decoder_channel_master.ip" />
   </sourceFiles>
   <childSourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
   </childSourceFiles>
   <messages>
    <message level="Info" culprit="address_decoder_channel_master">"Generating: address_decoder_channel_master"</message>
-   <message level="Info" culprit="address_decoder_channel_master">"Generating: address_decoder_channel_master_altera_merlin_master_translator_181_mhudjri"</message>
+   <message level="Info" culprit="address_decoder_channel_master">"Generating: address_decoder_channel_master_altera_merlin_master_translator_192_lykd4la"</message>
   </messages>
  </entity>
  <entity
    kind="altera_merlin_master_translator"
-   version="18.1"
-   name="address_decoder_channel_master_altera_merlin_master_translator_181_mhudjri">
+   version="19.2"
+   name="address_decoder_channel_master_altera_merlin_master_translator_192_lykd4la">
   <parameter name="WAITREQUEST_ALLOWANCE" value="0" />
   <generatedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\altera_merlin_master_translator_181\synth\address_decoder_channel_master_altera_merlin_master_translator_181_mhudjri.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\altera_merlin_master_translator_192\synth\address_decoder_channel_master_altera_merlin_master_translator_192_lykd4la.sv"
        attributes="" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="C:\Users\ahaas\AppData\Local\Temp\alt9404_3265990298192936513.dir\0003_alt_em10g32_0_gen\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\altera_merlin_master_translator_181\synth\address_decoder_channel_master_altera_merlin_master_translator_181_mhudjri.sv"
+       path="C:\gitwork\LL10G_Cyclone10GX_1\rtl\address_decoder\ip\address_decoder_channel\address_decoder_channel_master\altera_merlin_master_translator_192\synth\address_decoder_channel_master_altera_merlin_master_translator_192_lykd4la.sv"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
    <file
-       path="E:/intelfpga_pro/18.1/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
+       path="E:/intelfpga_pro/23.4/ip/altera/merlin/altera_merlin_master_translator/altera_merlin_master_translator_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="address_decoder_channel_master" as="master" />
   <messages>
-   <message level="Info" culprit="address_decoder_channel_master">"Generating: address_decoder_channel_master_altera_merlin_master_translator_181_mhudjri"</message>
+   <message level="Info" culprit="address_decoder_channel_master">"Generating: address_decoder_channel_master_altera_merlin_master_translator_192_lykd4la"</message>
   </messages>
  </entity>
 </deploy>

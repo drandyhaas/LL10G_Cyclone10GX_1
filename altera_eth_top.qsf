@@ -41,11 +41,11 @@ set_global_assignment -name DEVICE 10CX220YF780I5G
 set_global_assignment -name TOP_LEVEL_ENTITY altera_eth_top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:28:45  JANUARY 05, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Pro Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.4.0 Pro Edition"
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 4
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity altera_eth_top -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity altera_eth_top -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -entity altera_eth_top -section_id Top
+# Obsolete assignment in <Version 23.4> "set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity altera_eth_top -section_id Top"
+# Obsolete assignment in <Version 23.4> "set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity altera_eth_top -section_id Top"
+# Obsolete assignment in <Version 23.4> "set_global_assignment -name PARTITION_COLOR 16764057 -entity altera_eth_top -section_id Top"
 
 
 # Reset
@@ -194,3 +194,4 @@ set_global_assignment -name IP_FILE rtl/address_decoder/ip/address_decoder_top/a
 set_global_assignment -name IP_FILE rtl/address_decoder/ip/address_decoder_top/address_decoder_top_traffic_controller_ch_6_7.ip
 set_global_assignment -name IP_FILE rtl/address_decoder/ip/address_decoder_top/address_decoder_top_traffic_controller_ch_8_9.ip
 set_global_assignment -name IP_FILE rtl/address_decoder/ip/address_decoder_top/address_decoder_top_traffic_controller_ch_10_11.ip
+set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON

@@ -1,128 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simPackage>
  <file
-   path="altera_merlin_master_translator_181/sim/address_decoder_multi_channel_altera_merlin_master_translator_181_mhudjri.sv"
+   path="altera_merlin_master_translator_192/sim/address_decoder_multi_channel_altera_merlin_master_translator_192_lykd4la.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_master_translator_181" />
+   library="altera_merlin_master_translator_192" />
  <file
-   path="altera_merlin_slave_translator_181/sim/address_decoder_multi_channel_altera_merlin_slave_translator_181_5aswt6a.sv"
+   path="altera_merlin_slave_translator_191/sim/address_decoder_multi_channel_altera_merlin_slave_translator_191_x56fcki.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_slave_translator_181" />
+   library="altera_merlin_slave_translator_191" />
  <file
-   path="altera_merlin_master_agent_181/sim/address_decoder_multi_channel_altera_merlin_master_agent_181_t5eyqrq.sv"
+   path="altera_merlin_master_agent_1921/sim/address_decoder_multi_channel_altera_merlin_master_agent_1921_2inlndi.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_master_agent_181" />
+   library="altera_merlin_master_agent_1921" />
  <file
-   path="altera_merlin_slave_agent_181/sim/address_decoder_multi_channel_altera_merlin_slave_agent_181_a7g37xa.sv"
+   path="altera_merlin_slave_agent_1921/sim/address_decoder_multi_channel_altera_merlin_slave_agent_1921_b6r3djy.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_slave_agent_181" />
+   library="altera_merlin_slave_agent_1921" />
  <file
-   path="altera_merlin_slave_agent_181/sim/altera_merlin_burst_uncompressor.sv"
+   path="altera_merlin_slave_agent_1921/sim/altera_merlin_burst_uncompressor.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_slave_agent_181" />
+   library="altera_merlin_slave_agent_1921" />
  <file
-   path="altera_avalon_sc_fifo_181/sim/address_decoder_multi_channel_altera_avalon_sc_fifo_181_hseo73i.v"
+   path="altera_avalon_sc_fifo_1931/sim/address_decoder_multi_channel_altera_avalon_sc_fifo_1931_fzgstwy.v"
    type="VERILOG"
-   library="altera_avalon_sc_fifo_181" />
+   library="altera_avalon_sc_fifo_1931" />
  <file
-   path="altera_merlin_router_181/sim/address_decoder_multi_channel_altera_merlin_router_181_2r62dfa.sv"
+   path="altera_merlin_router_1921/sim/address_decoder_multi_channel_altera_merlin_router_1921_7vlvonq.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_router_181" />
+   library="altera_merlin_router_1921" />
  <file
-   path="altera_merlin_router_181/sim/address_decoder_multi_channel_altera_merlin_router_181_ssua6gq.sv"
+   path="altera_merlin_router_1921/sim/address_decoder_multi_channel_altera_merlin_router_1921_2ih7bpa.sv"
    type="SYSTEM_VERILOG"
-   library="altera_merlin_router_181" />
+   library="altera_merlin_router_1921" />
  <file
-   path="altera_merlin_traffic_limiter_181/sim/address_decoder_multi_channel_altera_merlin_traffic_limiter_181_3qlefua.v"
+   path="altera_merlin_traffic_limiter_1921/sim/address_decoder_multi_channel_altera_merlin_traffic_limiter_altera_avalon_sc_fifo_1921_uxwrfrq.v"
    type="VERILOG"
-   library="altera_merlin_traffic_limiter_181"
+   library="altera_merlin_traffic_limiter_1921"
    hasInlineConfiguration="true" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/address_decoder_multi_channel_alt_hiconnect_sc_fifo_181_cjmuh4a.sv"
+   path="altera_merlin_traffic_limiter_1921/sim/altera_merlin_reorder_memory.sv"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_traffic_limiter_1921" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/alt_st_infer_scfifo.sv"
+   path="altera_merlin_traffic_limiter_1921/sim/altera_avalon_st_pipeline_base.v"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_traffic_limiter_1921" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/alt_st_mlab_scfifo.sv"
+   path="altera_merlin_traffic_limiter_1921/sim/address_decoder_multi_channel_altera_merlin_traffic_limiter_1921_76whh4i.sv"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_traffic_limiter_1921" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/alt_st_fifo_empty.sv"
+   path="altera_merlin_demultiplexer_1921/sim/address_decoder_multi_channel_altera_merlin_demultiplexer_1921_3t5wnca.sv"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_demultiplexer_1921" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/alt_st_mlab_scfifo_a6.sv"
+   path="altera_merlin_multiplexer_1922/sim/address_decoder_multi_channel_altera_merlin_multiplexer_1922_6rabhra.sv"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_multiplexer_1922" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/alt_st_mlab_scfifo_a7.sv"
+   path="altera_merlin_multiplexer_1922/sim/altera_merlin_arbitrator.sv"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_multiplexer_1922" />
  <file
-   path="alt_hiconnect_sc_fifo_181/sim/alt_st_reg_scfifo.sv"
+   path="altera_merlin_demultiplexer_1921/sim/address_decoder_multi_channel_altera_merlin_demultiplexer_1921_kxcjhna.sv"
    type="SYSTEM_VERILOG"
-   library="alt_hiconnect_sc_fifo_181" />
+   library="altera_merlin_demultiplexer_1921" />
  <file
-   path="altera_merlin_traffic_limiter_181/sim/address_decoder_multi_channel_altera_merlin_traffic_limiter_181_cjprurq.v"
+   path="altera_merlin_multiplexer_1922/sim/address_decoder_multi_channel_altera_merlin_multiplexer_1922_j3jdl3i.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_merlin_multiplexer_1922/sim/altera_merlin_arbitrator.sv"
+   type="SYSTEM_VERILOG"
+   library="altera_merlin_multiplexer_1922" />
+ <file
+   path="altera_mm_interconnect_1920/sim/address_decoder_multi_channel_altera_mm_interconnect_1920_c2i5g2q.v"
    type="VERILOG"
-   library="altera_merlin_traffic_limiter_181"
+   library="altera_mm_interconnect_1920"
    hasInlineConfiguration="true" />
  <file
-   path="altera_merlin_traffic_limiter_181/sim/altera_merlin_reorder_memory.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_traffic_limiter_181" />
- <file
-   path="altera_merlin_traffic_limiter_181/sim/altera_avalon_st_pipeline_base.v"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_traffic_limiter_181" />
- <file
-   path="altera_merlin_traffic_limiter_181/sim/address_decoder_multi_channel_altera_merlin_traffic_limiter_181_reppfiq.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_traffic_limiter_181" />
- <file
-   path="altera_merlin_demultiplexer_181/sim/address_decoder_multi_channel_altera_merlin_demultiplexer_181_5j5bexa.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_demultiplexer_181" />
- <file
-   path="altera_merlin_multiplexer_181/sim/address_decoder_multi_channel_altera_merlin_multiplexer_181_grdugky.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_multiplexer_181" />
- <file
-   path="altera_merlin_multiplexer_181/sim/altera_merlin_arbitrator.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_multiplexer_181" />
- <file
-   path="altera_merlin_demultiplexer_181/sim/address_decoder_multi_channel_altera_merlin_demultiplexer_181_otwqgqi.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_demultiplexer_181" />
- <file
-   path="altera_merlin_multiplexer_181/sim/address_decoder_multi_channel_altera_merlin_multiplexer_181_txx6epa.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_multiplexer_181" />
- <file
-   path="altera_merlin_multiplexer_181/sim/altera_merlin_arbitrator.sv"
-   type="SYSTEM_VERILOG"
-   library="altera_merlin_multiplexer_181" />
- <file
-   path="altera_mm_interconnect_181/sim/address_decoder_multi_channel_altera_mm_interconnect_181_2yhwuoa.v"
+   path="altera_reset_controller_1922/sim/altera_reset_controller.v"
    type="VERILOG"
-   library="altera_mm_interconnect_181"
-   hasInlineConfiguration="true" />
+   library="altera_reset_controller_1922" />
  <file
-   path="altera_reset_controller_181/sim/altera_reset_controller.v"
+   path="altera_reset_controller_1922/sim/altera_reset_synchronizer.v"
    type="VERILOG"
-   library="altera_reset_controller_181" />
+   library="altera_reset_controller_1922" />
  <file
-   path="altera_reset_controller_181/sim/altera_reset_synchronizer.v"
-   type="VERILOG"
-   library="altera_reset_controller_181" />
- <file
-   path="altera_reset_controller_181/sim/altera_reset_controller.sdc"
+   path="altera_reset_controller_1922/sim/altera_reset_controller.sdc"
    type="SDC_ENTITY"
-   library="altera_reset_controller_181" />
+   library="altera_reset_controller_1922" />
  <file
    path="sim/address_decoder_multi_channel.v"
    type="VERILOG"
@@ -130,4 +97,5 @@
    hasInlineConfiguration="true" />
  <topLevel name="address_decoder_multi_channel.address_decoder_multi_channel" />
  <deviceFamily name="cyclone10gx" />
+ <device name="10CX220YF780I5G" />
 </simPackage>

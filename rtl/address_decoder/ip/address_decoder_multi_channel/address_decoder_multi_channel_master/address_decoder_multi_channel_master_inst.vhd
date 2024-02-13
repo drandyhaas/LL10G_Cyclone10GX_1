@@ -1,29 +1,30 @@
 	component address_decoder_multi_channel_master is
 		generic (
-			AV_ADDRESS_W                : integer := 32;
+			AV_ADDRESS_W                : integer := 20;
 			AV_DATA_W                   : integer := 32;
-			AV_BURSTCOUNT_W             : integer := 4;
+			AV_BURSTCOUNT_W             : integer := 3;
 			AV_BYTEENABLE_W             : integer := 4;
-			UAV_ADDRESS_W               : integer := 38;
-			UAV_BURSTCOUNT_W            : integer := 10;
+			UAV_ADDRESS_W               : integer := 32;
+			UAV_BURSTCOUNT_W            : integer := 3;
 			USE_READ                    : integer := 1;
 			USE_WRITE                   : integer := 1;
 			USE_BEGINBURSTTRANSFER      : integer := 0;
 			USE_BEGINTRANSFER           : integer := 0;
 			USE_CHIPSELECT              : integer := 0;
-			USE_BURSTCOUNT              : integer := 1;
-			USE_READDATAVALID           : integer := 1;
+			USE_BURSTCOUNT              : integer := 0;
+			USE_READDATAVALID           : integer := 0;
 			USE_WAITREQUEST             : integer := 1;
 			USE_READRESPONSE            : integer := 0;
 			USE_WRITERESPONSE           : integer := 0;
 			AV_SYMBOLS_PER_WORD         : integer := 4;
-			AV_ADDRESS_SYMBOLS          : integer := 0;
-			AV_BURSTCOUNT_SYMBOLS       : integer := 0;
+			AV_ADDRESS_SYMBOLS          : integer := 1;
+			AV_BURSTCOUNT_SYMBOLS       : integer := 1;
 			AV_CONSTANT_BURST_BEHAVIOR  : integer := 0;
 			UAV_CONSTANT_BURST_BEHAVIOR : integer := 0;
 			AV_LINEWRAPBURSTS           : integer := 0;
 			AV_REGISTERINCOMINGSIGNALS  : integer := 0;
-			SYNC_RESET                  : integer := 0
+			SYNC_RESET                  : integer := 0;
+			USE_OUTPUTENABLE            : integer := 0
 		);
 		port (
 			clk               : in  std_logic                     := 'X';             -- clk
@@ -73,7 +74,8 @@
 			UAV_CONSTANT_BURST_BEHAVIOR => INTEGER_VALUE_FOR_UAV_CONSTANT_BURST_BEHAVIOR,
 			AV_LINEWRAPBURSTS           => INTEGER_VALUE_FOR_AV_LINEWRAPBURSTS,
 			AV_REGISTERINCOMINGSIGNALS  => INTEGER_VALUE_FOR_AV_REGISTERINCOMINGSIGNALS,
-			SYNC_RESET                  => INTEGER_VALUE_FOR_SYNC_RESET
+			SYNC_RESET                  => INTEGER_VALUE_FOR_SYNC_RESET,
+			USE_OUTPUTENABLE            => INTEGER_VALUE_FOR_USE_OUTPUTENABLE
 		)
 		port map (
 			clk               => CONNECTED_TO_clk,               --                       clk.clk

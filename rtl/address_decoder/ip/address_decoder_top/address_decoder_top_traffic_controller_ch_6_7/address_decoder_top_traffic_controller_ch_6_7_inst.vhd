@@ -1,22 +1,22 @@
 	component address_decoder_top_traffic_controller_ch_6_7 is
 		generic (
-			AV_ADDRESS_W                   : integer := 30;
+			AV_ADDRESS_W                   : integer := 14;
 			AV_DATA_W                      : integer := 32;
 			UAV_DATA_W                     : integer := 32;
-			AV_BURSTCOUNT_W                : integer := 4;
+			AV_BURSTCOUNT_W                : integer := 1;
 			AV_BYTEENABLE_W                : integer := 4;
 			UAV_BYTEENABLE_W               : integer := 4;
-			UAV_ADDRESS_W                  : integer := 32;
-			UAV_BURSTCOUNT_W               : integer := 4;
+			UAV_ADDRESS_W                  : integer := 14;
+			UAV_BURSTCOUNT_W               : integer := 3;
 			AV_READLATENCY                 : integer := 0;
-			USE_READDATAVALID              : integer := 1;
+			USE_READDATAVALID              : integer := 0;
 			USE_WAITREQUEST                : integer := 1;
 			USE_UAV_CLKEN                  : integer := 0;
 			USE_READRESPONSE               : integer := 0;
 			USE_WRITERESPONSE              : integer := 0;
 			AV_SYMBOLS_PER_WORD            : integer := 4;
-			AV_ADDRESS_SYMBOLS             : integer := 0;
-			AV_BURSTCOUNT_SYMBOLS          : integer := 0;
+			AV_ADDRESS_SYMBOLS             : integer := 1;
+			AV_BURSTCOUNT_SYMBOLS          : integer := 1;
 			AV_CONSTANT_BURST_BEHAVIOR     : integer := 0;
 			UAV_CONSTANT_BURST_BEHAVIOR    : integer := 0;
 			AV_REQUIRE_UNALIGNED_ADDRESSES : integer := 0;

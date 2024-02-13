@@ -1,109 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <simPackage>
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/altera_xcvr_native_a10_functions_h.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/altera_xcvr_native_a10_functions_h.sv"
    type="SYSTEM_VERILOG"
    library="altera_common_sv_packages"
    systemVerilogPackageName="altera_xcvr_native_a10_functions_h" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/twentynm_xcvr_avmm.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/twentynm_xcvr_avmm.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/twentynm_xcvr_avmm.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_xcvr_resync.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_xcvr_resync.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_xcvr_arbiter.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_xcvr_arbiter.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/alt_xcvr_resync.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/alt_xcvr_arbiter.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/a10_avmm_h.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/a10_avmm_h.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_xcvr_atx_pll_rcfg_arb.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_xcvr_atx_pll_rcfg_arb.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/a10_xcvr_atx_pll.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/a10_xcvr_atx_pll.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_xcvr_pll_embedded_debug.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_xcvr_pll_embedded_debug.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_xcvr_pll_avmm_csr.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_xcvr_pll_avmm_csr.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/alt_xcvr_atx_pll_rcfg_arb.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/a10_xcvr_atx_pll.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/alt_xcvr_pll_embedded_debug.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor/alt_xcvr_pll_avmm_csr.sv"
-   type="SYSTEM_VERILOG_ENCRYPT"
-   library="altera_xcvr_atx_pll_a10_181"
-   simulator="modelsim" />
- <file
-   path="altera_xcvr_atx_pll_a10_181/sim/plain_files.txt"
+   path="altera_xcvr_atx_pll_a10_191/sim/plain_files.txt"
    type="OTHER"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/mentor_files.txt"
+   path="altera_xcvr_atx_pll_a10_191/sim/mentor_files.txt"
    type="OTHER"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/cadence_files.txt"
+   path="altera_xcvr_atx_pll_a10_191/sim/cadence_files.txt"
    type="OTHER"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/synopsys_files.txt"
+   path="altera_xcvr_atx_pll_a10_191/sim/synopsys_files.txt"
    type="OTHER"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/aldec_files.txt"
+   path="altera_xcvr_atx_pll_a10_191/sim/aldec_files.txt"
    type="OTHER"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/docs/alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda_parameters.csv"
+   path="altera_xcvr_atx_pll_a10_191/sim/docs/alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda_parameters.csv"
    type="OTHER"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_181_lszmxda.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_mge_xcvr_atx_pll_10g_altera_xcvr_atx_pll_a10_191_urgttda.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
-   path="altera_xcvr_atx_pll_a10_181/sim/alt_xcvr_atx_pll_rcfg_opt_logic_lszmxda.sv"
+   path="altera_xcvr_atx_pll_a10_191/sim/alt_xcvr_atx_pll_rcfg_opt_logic_urgttda.sv"
    type="SYSTEM_VERILOG"
-   library="altera_xcvr_atx_pll_a10_181" />
+   library="altera_xcvr_atx_pll_a10_191" />
  <file
    path="sim/alt_mge_xcvr_atx_pll_10g.v"
    type="VERILOG"
@@ -111,4 +76,5 @@
    hasInlineConfiguration="true" />
  <topLevel name="alt_mge_xcvr_atx_pll_10g.alt_mge_xcvr_atx_pll_10g" />
  <deviceFamily name="cyclone10gx" />
+ <device name="10CX220YF780I5G" />
 </simPackage>
