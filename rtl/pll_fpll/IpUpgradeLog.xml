@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ip name="fPLL Intel Arria 10/Cyclone 10 FPGA IP">
+ <timestamp>2024-02-13T11:59:21.343511</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Transceiver ATX PLL Intel Arria 10/Cyclone 10 FPGA IP">
+ <timestamp>2024-02-13T11:59:22.899993</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Transceiver PHY Reset Controller Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:24.101823800</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>19.1.1</new_version>
+</ip>
+
+<ip name="Transceiver PHY Reset Controller Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:24.878253700</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>19.1.1</new_version>
+</ip>
+
+<ip name="JTAG to Avalon Master Bridge Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:26.127842100</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:26.956741700</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:27.561008200</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Master Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:28.229107300</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.2</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:28.809346800</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:29.416255600</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:30.055662700</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:30.641061300</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:31.208544700</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:31.802501100</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:32.437189700</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:33.028771</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:33.567981500</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:34.135858200</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:34.693049300</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:35.244164600</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:35.828758900</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Master Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:36.371428700</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.2</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:36.939056</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Master Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:37.461770800</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.2</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Clock Crossing Bridge Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:38.165734300</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.2.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:38.732982300</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:39.305126500</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:39.918361800</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:40.490742200</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:41.077856800</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>
+
+<ip name="Avalon Memory Mapped Slave Translator Intel FPGA IP">
+ <timestamp>2024-02-13T11:59:41.655850900</timestamp>
+ <file></file>
+ <old_version>18.0</old_version>
+ <new_version>19.1</new_version>
+</ip>

@@ -1,0 +1,58 @@
+	component address_decoder_top is
+		port (
+			csr_clk_clk                             : in  std_logic                     := 'X';             -- clk
+			csr_clk_reset_reset_n                   : in  std_logic                     := 'X';             -- reset_n
+			mac_clk_clk                             : in  std_logic                     := 'X';             -- clk
+			mac_clk_reset_reset_n                   : in  std_logic                     := 'X';             -- reset_n
+			slave_address                           : in  std_logic_vector(25 downto 0) := (others => 'X'); -- address
+			slave_waitrequest                       : out std_logic;                                        -- waitrequest
+			slave_read                              : in  std_logic                     := 'X';             -- read
+			slave_readdata                          : out std_logic_vector(31 downto 0);                    -- readdata
+			slave_readdatavalid                     : out std_logic;                                        -- readdatavalid
+			slave_write                             : in  std_logic                     := 'X';             -- write
+			slave_writedata                         : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			multi_channel_address                   : out std_logic_vector(19 downto 0);                    -- address
+			multi_channel_write                     : out std_logic;                                        -- write
+			multi_channel_read                      : out std_logic;                                        -- read
+			multi_channel_readdata                  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			multi_channel_writedata                 : out std_logic_vector(31 downto 0);                    -- writedata
+			multi_channel_waitrequest               : in  std_logic                     := 'X';             -- waitrequest
+			traffic_controller_ch_0_1_address       : out std_logic_vector(13 downto 0);                    -- address
+			traffic_controller_ch_0_1_write         : out std_logic;                                        -- write
+			traffic_controller_ch_0_1_read          : out std_logic;                                        -- read
+			traffic_controller_ch_0_1_readdata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			traffic_controller_ch_0_1_writedata     : out std_logic_vector(31 downto 0);                    -- writedata
+			traffic_controller_ch_0_1_waitrequest   : in  std_logic                     := 'X';             -- waitrequest
+			traffic_controller_ch_10_11_address     : out std_logic_vector(13 downto 0);                    -- address
+			traffic_controller_ch_10_11_write       : out std_logic;                                        -- write
+			traffic_controller_ch_10_11_read        : out std_logic;                                        -- read
+			traffic_controller_ch_10_11_readdata    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			traffic_controller_ch_10_11_writedata   : out std_logic_vector(31 downto 0);                    -- writedata
+			traffic_controller_ch_10_11_waitrequest : in  std_logic                     := 'X';             -- waitrequest
+			traffic_controller_ch_2_3_address       : out std_logic_vector(13 downto 0);                    -- address
+			traffic_controller_ch_2_3_write         : out std_logic;                                        -- write
+			traffic_controller_ch_2_3_read          : out std_logic;                                        -- read
+			traffic_controller_ch_2_3_readdata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			traffic_controller_ch_2_3_writedata     : out std_logic_vector(31 downto 0);                    -- writedata
+			traffic_controller_ch_2_3_waitrequest   : in  std_logic                     := 'X';             -- waitrequest
+			traffic_controller_ch_4_5_address       : out std_logic_vector(13 downto 0);                    -- address
+			traffic_controller_ch_4_5_write         : out std_logic;                                        -- write
+			traffic_controller_ch_4_5_read          : out std_logic;                                        -- read
+			traffic_controller_ch_4_5_readdata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			traffic_controller_ch_4_5_writedata     : out std_logic_vector(31 downto 0);                    -- writedata
+			traffic_controller_ch_4_5_waitrequest   : in  std_logic                     := 'X';             -- waitrequest
+			traffic_controller_ch_6_7_address       : out std_logic_vector(13 downto 0);                    -- address
+			traffic_controller_ch_6_7_write         : out std_logic;                                        -- write
+			traffic_controller_ch_6_7_read          : out std_logic;                                        -- read
+			traffic_controller_ch_6_7_readdata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			traffic_controller_ch_6_7_writedata     : out std_logic_vector(31 downto 0);                    -- writedata
+			traffic_controller_ch_6_7_waitrequest   : in  std_logic                     := 'X';             -- waitrequest
+			traffic_controller_ch_8_9_address       : out std_logic_vector(13 downto 0);                    -- address
+			traffic_controller_ch_8_9_write         : out std_logic;                                        -- write
+			traffic_controller_ch_8_9_read          : out std_logic;                                        -- read
+			traffic_controller_ch_8_9_readdata      : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			traffic_controller_ch_8_9_writedata     : out std_logic_vector(31 downto 0);                    -- writedata
+			traffic_controller_ch_8_9_waitrequest   : in  std_logic                     := 'X'              -- waitrequest
+		);
+	end component address_decoder_top;
+

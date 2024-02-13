@@ -1,0 +1,85 @@
+	component address_decoder_multi_channel is
+		port (
+			channel_0_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_0_write        : out std_logic;                                        -- write
+			channel_0_read         : out std_logic;                                        -- read
+			channel_0_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_0_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_0_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_1_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_1_write        : out std_logic;                                        -- write
+			channel_1_read         : out std_logic;                                        -- read
+			channel_1_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_1_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_1_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_10_address     : out std_logic_vector(15 downto 0);                    -- address
+			channel_10_write       : out std_logic;                                        -- write
+			channel_10_read        : out std_logic;                                        -- read
+			channel_10_readdata    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_10_writedata   : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_10_waitrequest : in  std_logic                     := 'X';             -- waitrequest
+			channel_11_address     : out std_logic_vector(15 downto 0);                    -- address
+			channel_11_write       : out std_logic;                                        -- write
+			channel_11_read        : out std_logic;                                        -- read
+			channel_11_readdata    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_11_writedata   : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_11_waitrequest : in  std_logic                     := 'X';             -- waitrequest
+			channel_2_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_2_write        : out std_logic;                                        -- write
+			channel_2_read         : out std_logic;                                        -- read
+			channel_2_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_2_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_2_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_3_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_3_write        : out std_logic;                                        -- write
+			channel_3_read         : out std_logic;                                        -- read
+			channel_3_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_3_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_3_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_4_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_4_write        : out std_logic;                                        -- write
+			channel_4_read         : out std_logic;                                        -- read
+			channel_4_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_4_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_4_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_5_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_5_write        : out std_logic;                                        -- write
+			channel_5_read         : out std_logic;                                        -- read
+			channel_5_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_5_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_5_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_6_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_6_write        : out std_logic;                                        -- write
+			channel_6_read         : out std_logic;                                        -- read
+			channel_6_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_6_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_6_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_7_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_7_write        : out std_logic;                                        -- write
+			channel_7_read         : out std_logic;                                        -- read
+			channel_7_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_7_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_7_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_8_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_8_write        : out std_logic;                                        -- write
+			channel_8_read         : out std_logic;                                        -- read
+			channel_8_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_8_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_8_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			channel_9_address      : out std_logic_vector(15 downto 0);                    -- address
+			channel_9_write        : out std_logic;                                        -- write
+			channel_9_read         : out std_logic;                                        -- read
+			channel_9_readdata     : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			channel_9_writedata    : out std_logic_vector(31 downto 0);                    -- writedata
+			channel_9_waitrequest  : in  std_logic                     := 'X';             -- waitrequest
+			csr_clk_clk            : in  std_logic                     := 'X';             -- clk
+			csr_clk_reset_reset_n  : in  std_logic                     := 'X';             -- reset_n
+			slave_address          : in  std_logic_vector(19 downto 0) := (others => 'X'); -- address
+			slave_waitrequest      : out std_logic;                                        -- waitrequest
+			slave_read             : in  std_logic                     := 'X';             -- read
+			slave_readdata         : out std_logic_vector(31 downto 0);                    -- readdata
+			slave_write            : in  std_logic                     := 'X';             -- write
+			slave_writedata        : in  std_logic_vector(31 downto 0) := (others => 'X')  -- writedata
+		);
+	end component address_decoder_multi_channel;
+

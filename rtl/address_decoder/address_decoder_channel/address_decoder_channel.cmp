@@ -1,0 +1,31 @@
+	component address_decoder_channel is
+		port (
+			csr_clk_clk           : in  std_logic                     := 'X';             -- clk
+			csr_clk_reset_reset_n : in  std_logic                     := 'X';             -- reset_n
+			mac_address           : out std_logic_vector(9 downto 0);                     -- address
+			mac_write             : out std_logic;                                        -- write
+			mac_read              : out std_logic;                                        -- read
+			mac_readdata          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			mac_writedata         : out std_logic_vector(31 downto 0);                    -- writedata
+			mac_waitrequest       : in  std_logic                     := 'X';             -- waitrequest
+			slave_address         : in  std_logic_vector(15 downto 0) := (others => 'X'); -- address
+			slave_waitrequest     : out std_logic;                                        -- waitrequest
+			slave_read            : in  std_logic                     := 'X';             -- read
+			slave_readdata        : out std_logic_vector(31 downto 0);                    -- readdata
+			slave_write           : in  std_logic                     := 'X';             -- write
+			slave_writedata       : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			phy_address           : out std_logic_vector(10 downto 0);                    -- address
+			phy_write             : out std_logic;                                        -- write
+			phy_read              : out std_logic;                                        -- read
+			phy_readdata          : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			phy_writedata         : out std_logic_vector(31 downto 0);                    -- writedata
+			phy_waitrequest       : in  std_logic                     := 'X';             -- waitrequest
+			xcvr_rcfg_address     : out std_logic_vector(9 downto 0);                     -- address
+			xcvr_rcfg_write       : out std_logic;                                        -- write
+			xcvr_rcfg_read        : out std_logic;                                        -- read
+			xcvr_rcfg_readdata    : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			xcvr_rcfg_writedata   : out std_logic_vector(31 downto 0);                    -- writedata
+			xcvr_rcfg_waitrequest : in  std_logic                     := 'X'              -- waitrequest
+		);
+	end component address_decoder_channel;
+

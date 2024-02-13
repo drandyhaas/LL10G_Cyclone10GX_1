@@ -1,0 +1,210 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the Intel FPGA Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 456 368)
+	(text "address_decoder_top_master" (rect 128 0 249 12)(font "Arial" (font_size 11)))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 65 22 76)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "reset" (rect 4 115 34 126)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 176)
+		(input)
+		(text "uav_waitrequest" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "uav_waitrequest" (rect 374 165 464 176)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 200)
+		(input)
+		(text "uav_readdatavalid" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "uav_readdatavalid" (rect 367 190 469 201)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 248)
+		(input)
+		(text "uav_readdata[31..0]" (rect 0 0 79 12)(font "Arial" (font_size 8)))
+		(text "uav_readdata[31..0]" (rect 361 240 475 251)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "av_address[25..0]" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "av_address[25..0]" (rect 4 165 106 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 153 176)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "av_read" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "av_read" (rect 4 215 46 226)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 296)
+		(input)
+		(text "av_write" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "av_write" (rect 4 290 52 301)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "av_writedata[31..0]" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "av_writedata[31..0]" (rect 4 315 118 326)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 72)
+		(output)
+		(text "uav_address[31..0]" (rect 0 0 76 12)(font "Arial" (font_size 8)))
+		(text "uav_address[31..0]" (rect 364 65 472 76)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 96)
+		(output)
+		(text "uav_burstcount[2..0]" (rect 0 0 82 12)(font "Arial" (font_size 8)))
+		(text "uav_burstcount[2..0]" (rect 356 90 476 101)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 120)
+		(output)
+		(text "uav_read" (rect 0 0 38 12)(font "Arial" (font_size 8)))
+		(text "uav_read" (rect 410 115 458 126)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 144)
+		(output)
+		(text "uav_write" (rect 0 0 38 12)(font "Arial" (font_size 8)))
+		(text "uav_write" (rect 407 140 461 151)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 224)
+		(output)
+		(text "uav_byteenable[3..0]" (rect 0 0 83 12)(font "Arial" (font_size 8)))
+		(text "uav_byteenable[3..0]" (rect 355 215 475 226)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 272)
+		(output)
+		(text "uav_writedata[31..0]" (rect 0 0 79 12)(font "Arial" (font_size 8)))
+		(text "uav_writedata[31..0]" (rect 358 265 478 276)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 296)
+		(output)
+		(text "uav_lock" (rect 0 0 36 12)(font "Arial" (font_size 8)))
+		(text "uav_lock" (rect 413 290 461 301)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 456 320)
+		(output)
+		(text "uav_debugaccess" (rect 0 0 73 12)(font "Arial" (font_size 8)))
+		(text "uav_debugaccess" (rect 366 315 456 326)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 200)
+		(output)
+		(text "av_waitrequest" (rect 0 0 60 12)(font "Arial" (font_size 8)))
+		(text "av_waitrequest" (rect 4 190 88 201)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 248)
+		(output)
+		(text "av_readdata[31..0]" (rect 0 0 74 12)(font "Arial" (font_size 8)))
+		(text "av_readdata[31..0]" (rect 4 240 112 251)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "av_readdatavalid" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "av_readdatavalid" (rect 4 265 100 276)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "clk" (rect 138 46 294 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 158 71 334 152)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 124 96 278 205)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 158 121 346 252)(font "Arial" (color 0 0 0)))
+		(text "avalon_universal_master_0" (rect 290 46 730 105)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 252 71 546 152)(font "Arial" (color 0 0 0)))
+		(text "burstcount" (rect 241 96 542 202)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 267 121 558 252)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 266 146 562 302)(font "Arial" (color 0 0 0)))
+		(text "waitrequest" (rect 238 171 542 352)(font "Arial" (color 0 0 0)))
+		(text "readdatavalid" (rect 229 196 536 402)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 240 221 540 452)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 249 246 546 502)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 248 271 550 552)(font "Arial" (color 0 0 0)))
+		(text "lock" (rect 269 296 562 602)(font "Arial" (color 0 0 0)))
+		(text "debugaccess" (rect 231 321 528 652)(font "Arial" (color 0 0 0)))
+		(text "avalon_anti_master_0" (rect 24 146 168 305)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 158 171 358 352)(font "Arial" (color 0 0 0)))
+		(text "waitrequest" (rect 158 196 382 402)(font "Arial" (color 0 0 0)))
+		(text "read" (rect 158 221 340 452)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 158 246 364 502)(font "Arial" (color 0 0 0)))
+		(text "readdatavalid" (rect 158 271 394 552)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 158 296 346 602)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 158 321 370 652)(font "Arial" (color 0 0 0)))
+		(text " address_decoder_top_master " (rect 327 351 822 712)(font "Arial" ))
+		(line (pt 153 34)(pt 289 34)(line_width 1))
+		(line (pt 289 34)(pt 289 351)(line_width 1))
+		(line (pt 153 351)(pt 289 351)(line_width 1))
+		(line (pt 153 34)(pt 153 351)(line_width 1))
+		(line (pt 0 76)(pt 153 76)(line_width 1))
+		(line (pt 154 55)(pt 154 80)(line_width 1))
+		(line (pt 155 55)(pt 155 80)(line_width 1))
+		(line (pt 0 126)(pt 153 126)(line_width 1))
+		(line (pt 154 105)(pt 154 130)(line_width 1))
+		(line (pt 155 105)(pt 155 130)(line_width 1))
+		(line (pt 459 76)(pt 289 76)(line_width 3))
+		(line (pt 459 101)(pt 289 101)(line_width 3))
+		(line (pt 459 126)(pt 289 126)(line_width 1))
+		(line (pt 459 151)(pt 289 151)(line_width 1))
+		(line (pt 459 176)(pt 289 176)(line_width 1))
+		(line (pt 459 201)(pt 289 201)(line_width 1))
+		(line (pt 459 226)(pt 289 226)(line_width 3))
+		(line (pt 459 251)(pt 289 251)(line_width 3))
+		(line (pt 459 276)(pt 289 276)(line_width 3))
+		(line (pt 459 301)(pt 289 301)(line_width 1))
+		(line (pt 459 326)(pt 289 326)(line_width 1))
+		(line (pt 288 55)(pt 288 330)(line_width 1))
+		(line (pt 287 55)(pt 287 330)(line_width 1))
+		(line (pt 0 201)(pt 153 201)(line_width 1))
+		(line (pt 0 226)(pt 153 226)(line_width 1))
+		(line (pt 0 251)(pt 153 251)(line_width 3))
+		(line (pt 0 276)(pt 153 276)(line_width 1))
+		(line (pt 0 301)(pt 153 301)(line_width 1))
+		(line (pt 0 326)(pt 153 326)(line_width 3))
+		(line (pt 154 155)(pt 154 330)(line_width 1))
+		(line (pt 155 155)(pt 155 330)(line_width 1))
+		(line (pt 0 0)(pt 459 0)(line_width 1))
+		(line (pt 459 0)(pt 459 368)(line_width 1))
+		(line (pt 0 368)(pt 459 368)(line_width 1))
+		(line (pt 0 0)(pt 0 368)(line_width 1))
+	)
+)

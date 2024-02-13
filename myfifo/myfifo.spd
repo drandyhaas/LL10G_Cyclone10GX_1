@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="fifo_1924/sim/myfifo_fifo_1924_idgkmhq.v"
+   type="VERILOG"
+   library="fifo_1924" />
+ <file
+   path="fifo_1924/sim/myfifo_fifo_1924_idgkmhq.sdc"
+   type="SDC_ENTITY"
+   library="fifo_1924" />
+ <file
+   path="sim/myfifo.v"
+   type="VERILOG"
+   library="myfifo"
+   hasInlineConfiguration="true" />
+ <topLevel name="myfifo.myfifo" />
+ <deviceFamily name="cyclone10gx" />
+ <device name="10CX220YF780I5G" />
+</simPackage>

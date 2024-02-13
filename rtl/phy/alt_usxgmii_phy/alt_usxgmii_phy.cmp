@@ -1,0 +1,44 @@
+	component alt_usxgmii_phy is
+		port (
+			csr_clk              : in  std_logic                     := 'X';             -- clk
+			xgmii_rx_coreclkin   : in  std_logic                     := 'X';             -- clk
+			xgmii_tx_coreclkin   : in  std_logic                     := 'X';             -- clk
+			reset                : in  std_logic                     := 'X';             -- reset
+			rx_digitalreset      : in  std_logic                     := 'X';             -- rx_digitalreset
+			tx_digitalreset      : in  std_logic                     := 'X';             -- tx_digitalreset
+			csr_readdata         : out std_logic_vector(31 downto 0);                    -- readdata
+			csr_writedata        : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			csr_address          : in  std_logic_vector(10 downto 0) := (others => 'X'); -- address
+			csr_waitrequest      : out std_logic;                                        -- waitrequest
+			csr_read             : in  std_logic                     := 'X';             -- read
+			csr_write            : in  std_logic                     := 'X';             -- write
+			xgmii_tx_valid       : in  std_logic                     := 'X';             -- export
+			xgmii_tx_control     : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- export
+			xgmii_tx_data        : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			xgmii_rx_valid       : out std_logic;                                        -- export
+			xgmii_rx_control     : out std_logic_vector(3 downto 0);                     -- export
+			xgmii_rx_data        : out std_logic_vector(31 downto 0);                    -- export
+			led_an               : out std_logic;                                        -- export
+			rx_block_lock        : out std_logic;                                        -- rx_enh_blk_lock
+			operating_speed      : out std_logic_vector(2 downto 0);                     -- export
+			tx_serial_clk        : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- clk
+			rx_cdr_refclk_1      : in  std_logic                     := 'X';             -- clk
+			rx_pma_clkout        : out std_logic;                                        -- clk
+			tx_analogreset       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- tx_analogreset
+			rx_analogreset       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_analogreset
+			tx_cal_busy          : out std_logic_vector(0 downto 0);                     -- tx_cal_busy
+			rx_cal_busy          : out std_logic_vector(0 downto 0);                     -- rx_cal_busy
+			tx_serial_data       : out std_logic_vector(0 downto 0);                     -- tx_serial_data
+			rx_serial_data       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- rx_serial_data
+			rx_is_lockedtodata   : out std_logic_vector(0 downto 0);                     -- rx_is_lockedtodata
+			reconfig_clk         : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- clk
+			reconfig_reset       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- reset
+			reconfig_write       : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- write
+			reconfig_read        : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- read
+			reconfig_address     : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- address
+			reconfig_writedata   : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			reconfig_readdata    : out std_logic_vector(31 downto 0);                    -- readdata
+			reconfig_waitrequest : out std_logic_vector(0 downto 0)                      -- waitrequest
+		);
+	end component alt_usxgmii_phy;
+

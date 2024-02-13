@@ -1,0 +1,19 @@
+# system info myfifo on 2024.02.13.11:57:34
+system_info:
+name,value
+DEVICE,10CX220YF780I5G
+DEVICE_FAMILY,Cyclone 10 GX
+GENERATION_ID,0
+#
+#
+# Files generated for myfifo on 2024.02.13.11:57:34
+files:
+filepath,kind,attributes,module,is_top
+sim/myfifo.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,myfifo,true
+fifo_1924/sim/myfifo_fifo_1924_idgkmhq.v,VERILOG,,myfifo_fifo_1924_idgkmhq,false
+fifo_1924/sim/myfifo_fifo_1924_idgkmhq.sdc,SDC_ENTITY,NO_AUTO_INSTANCE_DISCOVERY NO_SDC_PROMOTION,myfifo_fifo_1924_idgkmhq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+myfifo.fifo_0,myfifo_fifo_1924_idgkmhq

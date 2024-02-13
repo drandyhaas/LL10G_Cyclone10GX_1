@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ip name="FIFO Intel FPGA IP">
+ <timestamp>2024-02-13T11:56:39.058363300</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>19.2.4</new_version>
+ <changes>
+  <change>19.2.3</change>
+  <change> No parameter change </change>
+  <change> No port change </change>
+  <change> Quartus infrastructure maintenance </change>
+ </changes>
+</ip>
+
+<ip name="Low Latency Ethernet 10G MAC Intel FPGA IP">
+ <timestamp>2024-02-13T11:56:40.486096</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>22.0.4</new_version>
+ <changes>
+  <change>22.0.4</change>
+  <change> No parameter change </change>
+  <change> No parameter change </change>
+  <change> No port change </change>
+  <change> No port change </change>
+  <change> Internal verification bug fixes </change>
+  <change> Internal verification bug fixes, ODIP file change and ED pin assignment update </change>
+ </changes>
+</ip>
+
+<ip name="1G/2.5G/5G/10G  Multirate Ethernet PHY Intel FPGA IP">
+ <timestamp>2024-02-13T11:56:51.971082900</timestamp>
+ <file></file>
+ <old_version>18.1</old_version>
+ <new_version>22.0.1</new_version>
+ <changes>
+  <change>22.0.1</change>
+  <change> No parameter change </change>
+  <change> No parameter change </change>
+  <change>  No port change </change>
+  <change>  No port change </change>
+  <change> Major version update is required as there is a change in version in alt_usxgmii_phy and internal bug fixes </change>
+  <change>ODIP file changes </change>
+ </changes>
+</ip>
